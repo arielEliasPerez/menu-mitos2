@@ -1,0 +1,55 @@
+{
+  "bottle": [
+    {
+      "id": "brahma",
+      "name": "Brahma",
+      "image": "Brahma.jpg",
+      "description": "Botella de 1 litro.",
+      "price": 10000
+    },
+    {
+      "id": "corona",
+      "name": "Corona",
+      "image": "Corona.jpg",
+      "description": "Botella de 355 ml.",
+      "price": 6000
+    },
+    {
+      "id": "heineken",
+      "name": "Heineken",
+      "image": "heineken.jpg",
+      "description": "Botella de 1 litro.",
+      "price": 12000
+    },
+    {
+      "id": "stella",
+      "name": "Stella",
+      "image": "stella.jpg",
+      "description": "Botella de 1 litro.",
+      "price": 12000
+    }
+  ],
+  "beer-tap": [
+    {
+      "id": "brahma-tap",
+      "name": "Brahma",
+      "image": "brahma-tap.jpg",
+      "description": "Chopera Brahma de 2 Litros.",
+      "price": 24000
+    },
+    {
+      "id": "heineken-tap",
+      "name": "Heineken",
+      "image": "heineken-tap.jpg",
+      "description": "Chopera Heineken de 2 Litros.",
+      "price": 28000
+    },
+    {
+      "id": "stella-tap",
+      "name": "Stella",
+      "image": "stella-tap.jpg",
+      "description": "Chopera Stella de 2 Litros.",
+      "price": 28000
+    }
+  ]
+}

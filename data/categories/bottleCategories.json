@@ -1,0 +1,8 @@
+[
+    { "id": "champagne", "name": "Champagnes" },
+    { "id": "white-wine", "name": "Vinos Blancos" },
+    { "id": "vodka", "name": "Vodka" },
+    { "id": "spirits", "name": "Bebidas Espirituosas" },
+    { "id": "whiskey", "name": "Whiskey" },
+    { "id": "premium", "name": "Botellas Premium" }
+]

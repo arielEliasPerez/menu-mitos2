@@ -1,0 +1,5 @@
+[
+    { "id": "burguer", "name": "Hamburguesas" },
+    { "id": "chicken", "name": "Alitas de Pollo" },
+    { "id": "french-fries", "name": "Papas Fritas" }
+]

@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "title": "Mitos Bar",
+    "theme": {
+      "primary": "#ff3b3b",
+      "secondary": "#3ba7ff",
+      "bg": "#0b0f1a"
+    },
+    "social": [
+      { "name": "Instagram", "url": "https://instagram.com/mitosbar", "icon": "assets/instagram.svg" },
+      { "name": "Facebook", "url": "https://facebook.com/mitosbar", "icon": "assets/facebook.svg" },
+      { "name": "WhatsApp", "url": "https://wa.me/54911XXXXXXXX", "icon": "assets/whatsapp.svg" }
+    ],
+    "logo": "assets/logo-mitosbar.svg"
+  },
+  "sections": [
+    {
+      "id": "cervezas",
+      "name": "Cervezas",
+      "categories": [
+        {
+          "id": "tiradas",
+          "name": "Tiradas",
+          "products": [
+            {
+              "id": "ipa-pinta",
+              "name": "IPA Pinta",
+              "image": "assets/products/ipa-pinta.jpg",
+              "description": "Cerveza artesanal IPA, notas cítricas y amargor medio-alto.",
+              "price": 3500
+            },
+            {
+              "id": "lager-pinta",
+              "name": "Lager Pinta",
+              "image": "assets/products/lager-pinta.jpg",
+              "description": "Clásica y refrescante, final limpio.",
+              "price": 3200
+            }
+          ]
+        },
+        {
+          "id": "botella",
+          "name": "Botella",
+          "products": [
+            {
+              "id": "stout-330",
+              "name": "Stout 330ml",
+              "image": "assets/products/stout-330.jpg",
+              "description": "Cuerpo medio, tostado, notas de café.",
+              "price": 3000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "promos",
+      "name": "Promos",
+      "products": [
+        {
+          "id": "promo-amigos",
+          "name": "Promo Amigos",
+          "image": "assets/products/promo-amigos.jpg",
+          "description": "2 pintas + 1 acompañamiento a elección.",
+          "price": 7800
+        }
+      ]
+    },
+    {
+      "id": "botellas",
+      "name": "Botellas",
+      "products": [
+        {
+          "id": "vodka-1l",
+          "name": "Vodka 1L",
+          "image": "assets/products/vodka.jpg",
+          "description": "Vodka premium, sirve 20 tragos.",
+          "price": 25000
+        }
+      ]
+    },
+    {
+      "id": "comidas",
+      "name": "Comidas",
+      "categories": [
+        {
+          "id": "burgers",
+          "name": "Burgers",
+          "products": [
+            {
+              "id": "mitos-burger",
+              "name": "Mitos Burger",
+              "image": "assets/products/mitos-burger.jpg",
+              "description": "Doble carne, cheddar, panceta, salsa especial.",
+              "price": 5200
+            }
+          ]
+        },
+        {
+          "id": "pizza",
+          "name": "Pizza",
+          "products": [
+            {
+              "id": "muzza",
+              "name": "Muzza",
+              "image": "assets/products/pizza-muzza.jpg",
+              "description": "Mozzarella, orégano, aceitunas.",
+              "price": 4800
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tragos",
+      "name": "Tragos",
+      "categories": [
+        {
+          "id": "clasicos",
+          "name": "Clásicos",
+          "products": [
+            {
+              "id": "negroni",
+              "name": "Negroni",
+              "image": "assets/products/negroni.jpg",
+              "description": "Ginebra, vermut rosso, Campari.",
+              "price": 4200
+            },
+            {
+              "id": "margarita",
+              "name": "Margarita",
+              "image": "assets/products/margarita.jpg",
+              "description": "Tequila, triple sec, lima.",
+              "price": 4200
+            }
+          ]
+        },
+        {
+          "id": "frescos",
+          "name": "Frescos",
+          "products": [
+            {
+              "id": "mojito",
+              "name": "Mojito",
+              "image": "assets/products/mojito.jpg",
+              "description": "Ron, menta, lima, soda.",
+              "price": 4100
+            }
+          ]
+        },
+        {
+          "id": "dulces-frutales",
+          "name": "Dulces y frutales",
+          "products": [
+            {
+              "id": "sex-on-the-beach",
+              "name": "Sex on the Beach",
+              "image": "assets/products/sex-on-the-beach.jpg",
+              "description": "Vodka, durazno, naranja, arándano.",
+              "price": 4300
+            }
+          ]
+        },
+        {
+          "id": "fuertes",
+          "name": "Fuertes",
+          "products": [
+            {
+              "id": "old-fashioned",
+              "name": "Old Fashioned",
+              "image": "assets/products/old-fashioned.jpg",
+              "description": "Bourbon, bitter, azúcar.",
+              "price": 4500
+            }
+          ]
+        },
+        {
+          "id": "con-champagne",
+          "name": "Con Champagne",
+          "products": [
+            {
+              "id": "aperol-spritz",
+              "name": "Aperol Spritz",
+              "image": "assets/products/aperol-spritz.jpg",
+              "description": "Aperol, espumante, soda.",
+              "price": 4700
+            }
+          ]
+        },
+        {
+          "id": "chupitos",
+          "name": "Chupitos",
+          "products": [
+            {
+              "id": "tequila-shot",
+              "name": "Tequila Shot",
+              "image": "assets/products/tequila-shot.jpg",
+              "description": "Tequila, sal y limón.",
+              "price": 1500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sin-alcohol",
+      "name": "Sin Alcohol",
+      "products": [
+        {
+          "id": "limonada",
+          "name": "Limonada",
+          "image": "assets/products/limonada.jpg",
+          "description": "Lima, azúcar, agua con gas.",
+          "price": 2800
+        }
+      ]
+    },
+    {
+      "id": "acompanamientos",
+      "name": "Acompañamientos",
+      "products": [
+        {
+          "id": "papas-mitos",
+          "name": "Papas Mitos",
+          "image": "assets/products/papas-mitos.jpg",
+          "description": "Papas rústicas, cheddar, verdeo.",
+          "price": 3200
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  { "id": "beer", "name": "Cervezas", "hasCategories": true },
+  { "id": "promo", "name": "Promos", "hasCategories": false },
+  { "id": "bottle", "name": "Botellas", "hasCategories": true },
+  { "id": "food", "name": "Comidas", "hasCategories": true },
+  { "id": "drink", "name": "Tragos", "hasCategories": true },
+  { "id": "free-alcohol", "name": "Sin Alcohol", "hasCategories": false },
+  { "id": "companionship", "name": "Acompañamientos", "hasCategories": false }
+]

@@ -1,0 +1,106 @@
+{
+    "champagne": [
+        {
+            "id": "novechento",
+            "name": "Novechento",
+            "image": "novechento.jpg",
+            "description": "Novechento de 750 ml con 2 Speed.",
+            "price": 24000
+        },
+        {
+            "id": "federico",
+            "name": "Federico Alvear",
+            "image": "federico.jpg",
+            "description": "Federico Alvear de 750 ml con 2 Speed.",
+            "price": 30000
+        },
+        {
+            "id": "chandon",
+            "name": "Chandon (Extra Brut, Rose, Aperitif o Delise)",
+            "image": "chandon.jpg",
+            "description": "Chandon de 1 Litro con 2 Speed.",
+            "price": 50000
+        },
+        {
+            "id": "liason",
+            "name": "Liason (Extra Brut)",
+            "image": "liason.jpg",
+            "description": "Liason de 1,5 Litro con 2 Speed.",
+            "price": 60000
+        },
+        {
+            "id": "baron-b",
+            "name": "Baron B (Extra Brut)",
+            "image": "baron-b.jpg",
+            "description": "Baron B de 1,5 Litro con 2 Speed.",
+            "price": 80000
+        }
+    ],
+    "white-wine": [
+        {
+            "id": "cosecha-tardia",
+            "name": "Cosecha Tardia",
+            "image": "cosecha-tardia.jpg",
+            "description": "Cosecha Tardia de 750 ml con 2 Speed.",
+            "price": 24000
+        },
+        {
+            "id": "new-age",
+            "name": "New Age",
+            "image": "new-age.jpg",
+            "description": "New Age de 750 ml con 2 Speed.",
+            "price": 24000
+        },
+        {
+            "id": "santa-julia",
+            "name": "Santa Julia",
+            "image": "santa-julia.jpg",
+            "description": "Santa Julia de 750 ml con 2 Speed.",
+            "price": 30000
+        }
+    ],
+    "vodka": [
+        {
+            "id": "smirnoff",
+            "name": "Smirnoff",
+            "image": "smirnoff.jpg",
+            "description": "Smirnoff común con 2 Speed, Jugo de Naranja o Sprite.",
+            "price": 38000
+        },
+        {
+            "id": "smirnoff-saborizado",
+            "name": "Smirnoff Saborizado",
+            "image": "smirnoff-saborizado.jpg",
+            "description": "Smirnoff Saborizado (Frutilla, Maracuyá o Manzana Verde) con 2 Speed, Jugo de Naranja o Sprite.",
+            "price": 38000
+        },
+        {
+            "id": "sernova",
+            "name": "Sernova",
+            "image": "sernova.jpg",
+            "description": "Sernova común con 2 Speed, Jugo de Naranja o Sprite.",
+            "price": 38000
+        },
+        {
+            "id": "skyy",
+            "name": "Skyy",
+            "image": "skyy.jpg",
+            "description": "Skyy común con 2 Speed, Jugo de Naranja o Sprite.",
+            "price": 40000
+        },
+        {
+            "id": "absolut-saborizado",
+            "name": "Absolut Saborizado",
+            "image": "absolut-saborizado.jpg",
+            "description": "Absolut Saborizado con 2 Speed, Jugo de Naranja o Sprite.",
+            "price": 70000
+        },
+        {
+            "id": "pravda",
+            "name": "Pravda",
+            "image": "pravda.jpg",
+            "description": "Vodka Pravda con 2 Speed, Jugo de Naranja o Sprite.",
+            "price": 120000
+        }
+    ]
+}

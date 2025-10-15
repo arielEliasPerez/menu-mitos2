@@ -1,0 +1,64 @@
+{
+    "burguer": [
+        {
+        "id": "classic-burguer",
+        "name": "Hamburguesa Clásica",
+        "image": "classic-burguer.jpg",
+        "description": "Hamburguesa con lechuga y tomate.",
+        "price": 7000
+        },
+        {
+        "id": "french-fries-burguer",
+        "name": "Hamburguesa con Papas Fritas",
+        "image": "french-fries-burguer.jpg",
+        "description": "Hamburguesa con lechuga y tomate. Acompañada de papas fritas.",
+        "price": 13000
+        },
+        {
+        "id": "mitos-burguer",
+        "name": "Hamburguesa Mitos",
+        "image": "mitos-burguer.jpg",
+        "description": "Hamburguesa con lechuga, tomate, jamón y queso. Acompañada de papas fritas.",
+        "price": 15000
+        }
+    ],
+    "chicken": [
+        {
+        "id": "chicken-wings",
+        "name": "Alitas de Pollo",
+        "image": "chicken-wings.jpg",
+        "description": "5 piezas de alitas de pollo acompañadas de salsa picante.",
+        "price": 7000
+        },
+        {
+        "id": "french-fries-chicken-wings",
+        "name": "Alitas de Pollo con Papas Fritas",
+        "image": "french-fries-chicken-wings.jpg",
+        "description": "5 piezas de alitas de pollo acompañadas de papas fritas y salsa picante.",
+        "price": 15000
+        }
+    ],
+    "french-fries": [
+        {
+        "id": "simple-fries",
+        "name": "Papas fritas simples",
+        "image": "simple-fries.jpg",
+        "description": "Papas fritas simples con aderezos.",
+        "price": 6000
+        },
+        {
+        "id": "cheese-fries",
+        "name": "Papas Fritas con Cheddar",
+        "image": "cheese-fries.jpg",
+        "description": "Papas fritas cubiertas con queso cheddar.",
+        "price": 10000
+        },
+        {
+        "id": "salchipapas",
+        "name": "Salchi Papas",
+        "image": "salchipapas.jpg",
+        "description": "Papas fritas con salchichas y aderezos.",
+        "price": 12000
+        }
+    ]
+}
