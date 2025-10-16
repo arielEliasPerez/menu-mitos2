@@ -1,0 +1,18 @@
+{
+    "classic": [
+        {
+            "id": "Garibaldi",
+            "name": "Garibaldi",
+            "image": "garibaldi.jpg",
+            "description": "Jugo de Naranja y Campari.",
+            "price": 18000
+        },
+        {
+            "id": "jarra-fernet",
+            "name": "Jarra de Fernet",
+            "image": "jarra-fernet.jpg",
+            "description": "Jarra de Fernet con Coca-Cola.",
+            "price": 13000
+        }
+    ]
+}

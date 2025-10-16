@@ -1,0 +1,8 @@
+[
+    { "id": "classic", "name": "Clasicos Directos" },
+    { "id": "fruity", "name": "Tragos Frutales" },
+    { "id": "sweet", "name": "Tragos Dulces" },
+    { "id": "refreshing", "name": "Tragos Refrescantes" },
+    { "id": "strong", "name": "Tragos Intensos" },
+    { "id": "shots", "name": "Shots" }
+]
