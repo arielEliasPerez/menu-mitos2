@@ -1,0 +1,11 @@
+{
+    "default": [
+        {
+            "id": "mani",
+            "name": "Maní Salado",
+            "image": "mani.jpg",
+            "description": "Mini pote de maní.",
+            "price": "1000"
+        }
+    ]
+}

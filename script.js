@@ -148,8 +148,10 @@ async function renderSection(section) {
 // Búsqueda
 // ===============================
 function filterProducts(term) {
-  const cards = qsa(".product-card");
   const showAll = !term;
+
+  // 1. Filtrar productos
+  const cards = qsa(".product-card");
   cards.forEach((card) => {
     if (showAll) {
       card.style.display = "";
@@ -159,6 +161,24 @@ function filterProducts(term) {
     const desc = card.dataset.desc.toLowerCase();
     const match = name.includes(term) || desc.includes(term);
     card.style.display = match ? "" : "none";
+  });
+
+  // 2. Filtrar categorías
+  const categories = qsa(".category-block");
+  categories.forEach((cat) => {
+    const visibleProducts = qsa(".product-card", cat).some(
+      (p) => p.style.display !== "none"
+    );
+    cat.style.display = visibleProducts ? "" : "none";
+  });
+
+  // 3. Filtrar secciones
+  const sections = qsa(".section-block");
+  sections.forEach((sec) => {
+    const visibleProducts = qsa(".product-card", sec).some(
+      (p) => p.style.display !== "none"
+    );
+    sec.style.display = visibleProducts ? "" : "none";
   });
 }
 

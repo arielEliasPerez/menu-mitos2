@@ -1,8 +1,8 @@
 [
-    { "id": "classic", "name": "Clasicos Directos" },
-    { "id": "fruity", "name": "Tragos Frutales" },
-    { "id": "sweet", "name": "Tragos Dulces" },
-    { "id": "refreshing", "name": "Tragos Refrescantes" },
-    { "id": "strong", "name": "Tragos Intensos" },
-    { "id": "shots", "name": "Shots" }
+    { "id": "classic", "name": "Clásicos Directos" },
+    { "id": "fruity-sweet", "name": "Frutales o Dulces" },
+    { "id": "citrus-refreshing", "name": "Frescos o Cítricos" },
+    { "id": "strong", "name": "Intensos y Fuertes" },
+    { "id": "shots", "name": "Shots" },
+    { "id": "non-alcoholic", "name": "Tragos Sin Alcohol" }
 ]

@@ -1,11 +1,53 @@
 {
     "classic": [
         {
-            "id": "Garibaldi",
-            "name": "Garibaldi",
-            "image": "garibaldi.jpg",
-            "description": "Jugo de Naranja y Campari.",
+            "id": "aperol-spritz",
+            "name": "Aperol Spritz",
+            "image": "aperol-spritz.jpg",
+            "description": "Aperol, Federico Alvear y dash de Jugo de Naranja.",
+            "price": 20000
+        },
+        {
+            "id": "cuba-libre",
+            "name": "Cuba Libre",
+            "image": "cuba-libre.jpg",
+            "description": "Ron, Coca-Cola y Limón.",
             "price": 18000
+        },
+        {
+            "id": "durazno-champagne",
+            "name": "Durazno con Champagne",
+            "image": "durazno-champagne.jpg",
+            "description": "Pulpa de Durazno y Federico Alvear.",
+            "price": 18000
+        },
+        {
+            "id": "garibaldi",
+            "name": "Garibaldi (Campari con Naranja)",
+            "image": "garibaldi.jpg",
+            "description": "Campari y Jugo de Naranja.",
+            "price": 18000
+        },
+        {
+            "id": "melon-speed",
+            "name": "Melon con Speed",
+            "image": "melon-speed.jpg",
+            "description": "Licor de Melón, Vodka y Speed.",
+            "price": 15000
+        },
+        {
+            "id": "jagger-speed",
+            "name": "Jagger con Speed",
+            "image": "jagger-speed.jpg",
+            "description": "Medida de Jägermeister y un Speed.",
+            "price": 15000
+        },
+        {
+            "id": "tequila-sunrise",
+            "name": "Tequila Sunrise",
+            "image": "tequila-sunrise.jpg",
+            "description": "Tequila, Jugo de Naranja y Granadina.",
+            "price": 13000
         },
         {
             "id": "jarra-fernet",
@@ -13,6 +55,255 @@
             "image": "jarra-fernet.jpg",
             "description": "Jarra de Fernet con Coca-Cola.",
             "price": 13000
+        }
+    ],
+    "fruity-sweet": [
+        {
+            "id": "daikiri",
+            "name": "Daikiri (Frutilla, Durazno, Ananá o Maracuyá)",
+            "image": "daikiri.jpg",
+            "description": "Ron Blanco, Pulpa de la fruta elegida, Azúcar y Jugo de Limón.",
+            "price": 20000
+        },
+        {
+            "id": "pina-colada",
+            "name": "Piña Colada",
+            "image": "pina-colada.jpg",
+            "description": "Ron de coco, Licor de Piña Colada, Azúcar y Pulpa de Ananá.",
+            "price": 20000
+        },
+        {
+            "id": "sex-on-the-beach",
+            "name": "Sex on the Beach",
+            "image": "sex-on-the-beach.jpg",
+            "description": "Vodka, Licor de Durazno, Jugo de Naranja y Granadina.",
+            "price": 20000
+        },
+        {
+            "id": "missil",
+            "name": "Missil",
+            "image": "missil.jpg",
+            "description": "Tequila, Blue Curacao, Pulpa de Ananá y Pulpa de Frutilla.",
+            "price": 20000
+        },
+        {
+            "id": "pink-summer",
+            "name": "Pink Summer",
+            "image": "pink-summer.jpg",
+            "description": "Cosecha Tardía, Pulpa de Ananá y Jugo de Pomelo.",
+            "price": 20000
+        },
+        {
+            "id": "tropical-tardia",
+            "name": "Tropical Tardia",
+            "image": "tropical-tardia.jpg",
+            "description": "Cosecha Tardía, Pulpa de Maracuyá y Zumo de Limón.",
+            "price": 20000
+        },
+        {
+            "id": "orgasmo",
+            "name": "Orgasmo",
+            "image": "orgasmo.jpg",
+            "description": "Vodka, Piña Colada, Pulpa de Durazno, Azúcar y Jugo de Naranja.",
+            "price": 20000
+        },
+        {
+            "id": "esperma-de-pitufo",
+            "name": "Esperma de Pitufo",
+            "image": "esperma-de-pitufo.jpg",
+            "description": "Vodka, Piña Colada, Blue Curacao y Pulpa de Ananá.",
+            "price": 20000
+        },
+        {
+            "id": "pantera-rosa",
+            "name": "Pantera Rosa",
+            "image": "panter-rosa.jpg",
+            "description": "Vodka, Piña Colada, Granadina y Pulpa de Ananá.",
+            "price": 20000
+        }
+    ],
+    "citrus-refreshing": [
+        {
+            "id": "blue-lagoon",
+            "name": "Blue Lagoon",
+            "image": "blue-lagoon.jpg",
+            "description": "Vodka, Blue Curaçao, Jugo de Limón y Sprite.",
+            "price": 20000
+        },
+        {
+            "id": "mojito",
+            "name": "Mojito",
+            "image": "mojito.jpg",
+            "description": "Ron, Hojas de Menta, Azúcar, Jugo de Limón y Sprite.",
+            "price": 20000
+        },
+        {
+            "id": "caipirinha",
+            "name": "Caipirinha",
+            "image": "caipirinha.jpg",
+            "description": "Cachaça, Lima, Azúcar y Soda.",
+            "price": 20000
+        },
+        {
+            "id": "caipiroska",
+            "name": "Caipiroska",
+            "image": "caipiroska.jpg",
+            "description": "Vodka, Lima, Azúcar y Soda.",
+            "price": 20000
+        },
+        {
+            "id": "gin-tonic",
+            "name": "Gin Tonic",
+            "image": "gin-tonic.jpg",
+            "description": "Ginebra, Agua Tónica y Limón.",
+            "price": 20000
+        },
+        {
+            "id": "gin-tonic-frutos-rojos",
+            "name": "Gin Tonic (Frutos Rojos)",
+            "image": "gin-tonic-frutos-rojos.jpg",
+            "description": "Ginebra, Agua Tónica y Frutos Rojos.",
+            "price": 20000
+        },
+        {
+            "id": "margarita",
+            "name": "Margarita",
+            "image": "margarita.jpg",
+            "description": "Tequila, Triple Sec, Azúcar Jugo de Limón, Jugo de Naranja.",
+            "price": 20000
+        }
+    ],
+    "strong": [
+        {
+            "id": "boulevardier",
+            "name": "Boulevardier",
+            "image": "boulevardier.jpg",
+            "description": "Whiskey, Campari y Vermouth Rosso.",
+            "price": 20000
+        },
+        {
+            "id": "negroni",
+            "name": "Negroni",
+            "image": "negroni.jpg",
+            "description": "Ginebra, Campari y Vermouth Rosso.",
+            "price": 20000
+        },
+        {
+            "id": "medida-black",
+            "name": "Medida de Black Label",
+            "image": "medida-black.jpg",
+            "description": "2 oz de Whiskey Black Label con hielo.",
+            "price": 20000
+        },
+        {
+            "id": "satanas",
+            "name": "Satanás",
+            "image": "satanas.jpg",
+            "description": "Tequila, Ron Dorado, Vodka, Triple Sec y Granadina.",
+            "price": 20000
+        }
+        
+    ],
+    "shots": [
+        {
+            "id": "tequila",
+            "name": "Shot Tequila",
+            "image": "tequila.jpg",
+            "description": "Medida de Tequila con Sal y Limón.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-beso-prohibido",
+            "name": "Chupito Beso Prohibido",
+            "image": "chupito-beso-prohibido.jpg",
+            "description": "Granadina, Piña Colada, Licor de Frutilla y Vodka.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-blue-kamikaze",
+            "name": "Chupito Blue Kamikaze",
+            "image": "chupito-blue-kamikaze.jpg",
+            "description": "Blue Curacao, Vodka y Zumo de Limón.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-cubanito",
+            "name": "Chupito Cubanito",
+            "image": "chupito-cubanito.jpg",
+            "description": "Licor de Chocolate Blanco, Licor de Chocolate, Licor de Café y Ron",
+            "price": 10000
+        },
+        {
+            "id": "chupito-dulce-ardor",
+            "name": "Chupito Dulce Ardor",
+            "image": "chupito-dulce-ardor.jpg",
+            "description": "Pulpa de Frutilla, Piña colada, Licor de Chocolate y Tequila",
+            "price": 10000
+        },
+        {
+            "id": "chupito-eclipse-lunar",
+            "name": "Chupito Eclipse Lunar",
+            "image": "chupito-eclipse-lunar.jpg",
+            "description": "Piña Colada, Licor de Café al Coñac, Blue Curacao y Vodka.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-francesita",
+            "name": "Chupito Francesita",
+            "image": "chupito-francesita.jpg",
+            "description": "Granadina, Piña Colada y Blue Curacao.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-de-kiev",
+            "name": "Chupito de Kiev",
+            "image": "chupito-de-kiev.jpg",
+            "description": "Pulpa Ananá, Blue Curacao, Zumo de Limón y Vodka.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-kriptonita",
+            "name": "Chupito Kriptonita",
+            "image": "chupito-kriptonita.jpg",
+            "description": "Pulpa de Ananá, Piña Colada, Licor de Menta y Vodka.",
+            "price": 10000
+        },
+        {
+            "id": "chupito-bob-marley",
+            "name": "Chupito Bob Marley",
+            "image": "chupito-bob-marley.jpg",
+            "description": "Pulpa de Frutilla, Licor de Durazno, Licor de Menta y Vodka",
+            "price": 10000
+        },
+        {
+            "id": "chupito-tricolor",
+            "name": "Chupito Tricolor",
+            "image": "chupito-tricolor.jpg",
+            "description": "Granadina, Jugo de Naranja, Blue Curacao y Vodka.",
+            "price": 10000
+        }
+    ],
+    "non-alcoholic": [
+        {
+            "id": "daikiri-virgen",
+            "name": "Daikiri Virgen (Frutilla, Durazno, Ananá o Maracuyá)",
+            "image": "daikiri-virgen.jpg",
+            "description": "Pulpa de la fruta elegida, Azúcar, Jugo de limón y Jugo de naranja.",
+            "price": 15000
+        },
+        {
+            "id": "mojito-virgen",
+            "name": "Mojito Virgen",
+            "image": "mojito-virgen.jpg",
+            "description": "Hojas de menta, Lima, Azúcar, Jugo de limón y Sprite.",
+            "price": 15000
+        },
+        {
+            "id": "san-francisco",
+            "name": "San Francisco",
+            "image": "san-francisco.jpg",
+            "description": "Jugo de naranja, Jugo de ananá, Jugo de limón y Granadina.",
+            "price": 15000
         }
     ]
 }

@@ -1,0 +1,53 @@
+{
+ "default": [
+     {
+        "id": "water",
+        "name": "Agua mineral",
+        "image": "water.jpg",
+        "description": "Agua mineral sin gas chica.",
+        "price": 3000
+    },
+    {
+        "id": "soda-can",
+        "name": "Coca-Cola o Sprite en lata",
+        "image": "soda-can.jpg",
+        "description": "",
+        "price": 4000
+    },
+    {
+        "id": "speed",
+        "name": "Speed",
+        "image": "speed.jpg",
+        "description": "Lata de 500ml.",
+        "price": 5000
+    },
+    {
+        "id": "soda-bottle-small",
+        "name": "Coca-Cola o Sprite chica",
+        "image": "soda-bottle-small.jpg",
+        "description": "Botella de 500ml.",
+        "price": 5000
+    },
+    {
+        "id": "juice",
+        "name": "Jugo Baggio de Naranja",
+        "image": "juice.jpg",
+        "description": "Jugo de naranja de 1 Litro.",
+        "price": 7000
+    },
+    {
+        "id": "sprite-bottle-large",
+        "name": "Sprite semi-grande",
+        "image": "sprite-bottle-large.jpg",
+        "description": "Botella de 1.75 Litros.",
+        "price": 8000
+    },
+    {
+        "id": "coca-cola-bottle-large",
+        "name": "Coca-Cola grande",
+        "image": "coca-cola-bottle-large.jpg",
+        "description": "Botella de 2.25 Litros.",
+        "price": 10000
+    }
+ ]
+}

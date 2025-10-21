@@ -8,9 +8,9 @@
             "price": 24000
         },
         {
-            "id": "federico",
+            "id": "federico-alvear",
             "name": "Federico Alvear",
-            "image": "federico.jpg",
+            "image": "federico-alvear.jpg",
             "description": "Federico Alvear de 750 ml con 2 Speed.",
             "price": 30000
         },
@@ -55,11 +55,18 @@
             "id": "santa-julia",
             "name": "Santa Julia",
             "image": "santa-julia.jpg",
-            "description": "Santa Julia de 750 ml con 2 Speed.",
+            "description": "Santa Julia de 750 ml",
             "price": 30000
         }
     ],
     "vodka": [
+        {
+            "id": "dr-lemon",
+            "name": "Dr Lemon",
+            "image": "dr-lemon.jpg",
+            "description": "Dr Lemon Vodka de 1 Litro.",
+            "price": 15000
+        },
         {
             "id": "smirnoff",
             "name": "Smirnoff",
@@ -101,6 +108,73 @@
             "image": "pravda.jpg",
             "description": "Vodka Pravda con 2 Speed, Jugo de Naranja o Sprite.",
             "price": 120000
+        }
+    ],
+    "spirits": [
+        {
+            "id": "hodlmoser",
+            "name": "Hodlmoser",
+            "image": "hodlmoser.jpg",
+            "description": "hodlmoser con 2 Speed. ",
+            "price": 80000
+        },
+        {
+            "id": "jagermeister",
+            "name": "Jagermeister",
+            "image": "jagermeister.jpg",
+            "description": "Jagermesiter con 4 Speed. ",
+            "price": 120000
+        },
+        {
+            "id": "gin-tonica",
+            "name": "Gin y Agua Tónica",
+            "image": "gin-tonica.jpg",
+            "description": "Botella de Gin Gordon con una botella de agua tónica.",
+            "price": 60000
+        },
+        {
+            "id": "fernet-coca-cola",
+            "name": "Fernet y Coca-Cola",
+            "image": "fernet-coca-cola.jpg",
+            "description": "Fernet Branca de 0.75 Litro con una Coca-Cola de 2.25 Litro.",
+            "price": 50000
+        },
+        {
+            "id": "red-label",
+            "name": "Red Label",
+            "image": "red-label.jpg",
+            "description": "Whisky Johnnie Walker Red Label de 0.75 Litro.",
+            "price": 100000
+        }
+    ],
+    "Exclusive": [
+        {
+            "id": "black-label",
+            "name": "Black Label",
+            "image": "black-label.jpg",
+            "description": "Whisky Johnnie Walker Black Label de 750 ml.",
+            "price": 120000
+        },
+        {
+            "id": "jack-daniels",
+            "name": "Jack Daniel's",
+            "image": "jack-daniels.jpg",
+            "description": "Whisky Jack Daniel's Old No.7 de 750 ml.",
+            "price": 120000
+        },
+        {
+            "id": "pravda",
+            "name": "Pravda",
+            "image": "pravda.jpg",
+            "description": "Vodka Pravda con 2 Speed.",
+            "price": 120000
+        },
+        {
+            "id": "nuvo",
+            "name": "Nuvo L'esprit",
+            "image": "nuvo.jpg",
+            "description": "¡Para ellas! Licor espumoso francés con 2 Speed.",
+            "price": 150000
         }
     ]
 }
