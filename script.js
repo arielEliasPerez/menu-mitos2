@@ -84,13 +84,13 @@ function renderSectionsNav(sections) {
 }
 
 function renderProduct(p) {
-  return `<article class="product-card" data-name="${escapeAttr(p.name)}" data-desc="${escapeAttr(p.description)}">
-    <img class="product-image" src="${p.image}" alt="${escapeAttr(p.name)}" loading="lazy" />
-    <div class="product-body">
+  return `<article class="product-card horizontal" data-name="${escapeAttr(p.name)}" data-desc="${escapeAttr(p.description)}">
+    <div class="product-image-wrap">
+      <img class="product-image" src="${p.image}" alt="${escapeAttr(p.name)}" loading="lazy" />
+    </div>
+    <div class="product-content">
       <div class="product-name">${p.name}</div>
       <div class="product-desc">${p.description}</div>
-    </div>
-    <div class="product-footer">
       <div class="product-price">${currency(p.price)}</div>
     </div>
   </article>`;
