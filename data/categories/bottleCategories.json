@@ -4,5 +4,5 @@
     { "id": "vodka", "name": "Vodka" },
     { "id": "spirits", "name": "Bebidas Espirituosas" },
     { "id": "whiskey", "name": "Whiskey" },
-    { "id": "Exclusive", "name": "Botellas Exclusivas" }
+    { "id": "exclusive", "name": "Botellas Exclusivas" }
 ]

@@ -73,11 +73,21 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 .section-header {
   display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px;
 }
-.section-header h2 { margin: 0; font-size: 20px; }
+
 .section-header .count { color: var(--muted); font-size: 13px; }
 
+.section-header h2 {
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
+}
+
+.category-title {
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(59,167,255,0.8), 0 0 12px rgba(255,59,59,0.4);
+}
+
 .category-block { margin-top: 12px; }
-.category-title { margin: 8px 0 12px; font-size: 16px; color: var(--secondary); text-shadow: 0 0 8px rgba(59,167,255,0.55); }
+
 
 .products-grid {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;
@@ -96,6 +106,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
   border: 1px solid rgba(255,255,255,0.08);
   align-items: center;
 }
+
 
 .product-card.horizontal .product-image-wrap {
   flex: 0 0 120px;
@@ -152,4 +163,87 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 .site-footer {
   border-top: 1px solid rgba(255,255,255,0.06);
   margin-top: 20px; padding: 20px 16px; color: var(--muted); text-align: center;
+}
+
+
+/*Iluminacion en el topBar*/
+.topbar {
+  animation: neonPulse 4s infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 6px rgba(255,59,59,0.4), 0 0 12px rgba(59,167,255,0.3);
+  }
+  to {
+    box-shadow: 0 0 12px rgba(255,59,59,0.7), 0 0 24px rgba(59,167,255,0.5);
+  }
+}
+
+
+.social-btn {
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+}
+.social-btn:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 0 10px rgba(255,59,59,0.7), 0 0 20px rgba(59,167,255,0.6);
+}
+
+
+/*Estilo a los cards exclusivos*/
+.product-card.exclusive {
+  border: 2px solid transparent;
+  background: linear-gradient(#0e1422, #0e1422) padding-box,
+              linear-gradient(135deg, purple, rgb(22, 184, 30)) border-box;
+  
+  position: relative;
+  animation: neonExclusivePulse 0.3s infinite alternate;
+}
+
+@keyframes neonExclusivePulse {
+  from {
+    box-shadow: 0 0 10px rgba(140, 5, 194, 0.4), 0 0 20px rgba(183, 59, 255, 0.2);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(165, 35, 182, 0.8), 0 0 40px rgba(232, 59, 255, 0.5);
+  }
+}
+
+.product-card.exclusive::after {
+  content: "★ Exclusivo";
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(59,167,255,0.8);
+}
+
+
+/* Bordes animados de seccion */
+.section-block {
+  background: var(--panel);
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 16px;
+  scroll-margin-top: 128px;
+  animation: neonSectionPulse 4s infinite alternate;
+
+  /* Borde neón azul */
+  background: linear-gradient(#111625, #111625) padding-box,
+              linear-gradient(135deg, var(--secondary), rgba(59,167,255,0.2)) border-box;
+  box-shadow: 0 0 12px rgba(59,167,255,0.5), 0 0 24px rgba(59,167,255,0.3);
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes neonSectionPulse {
+  from {
+    box-shadow: 0 0 10px rgba(25, 140, 206, 0.274), 0 0 20px rgba(59, 167, 255, 0.123);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(45, 112, 201, 0.8), 0 0 20px rgba(59,167,255,0.5);
+  }
 }

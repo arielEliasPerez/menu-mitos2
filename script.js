@@ -82,9 +82,9 @@ function renderSectionsNav(sections) {
   };
   state.setActive = setActive;
 }
-
-function renderProduct(p, sectionId) {
-  return `<article class="product-card horizontal" data-name="${escapeAttr(p.name)}" data-desc="${escapeAttr(p.description)}">
+function renderProduct(p, categoryId, sectionId) {
+  const exclusiveClass = categoryId == "exclusive" ? " exclusive" : "";
+  return `<article class="product-card horizontal${exclusiveClass}" data-name="${escapeAttr(p.name)}" data-desc="${escapeAttr(p.description)}">
     <div class="product-image-wrap">
       <img class="product-image" src="assets/products/${sectionId}/${p.image}" alt="${escapeAttr(p.name)}" loading="lazy" />
     </div>
@@ -95,6 +95,8 @@ function renderProduct(p, sectionId) {
     </div>
   </article>`;
 }
+
+
 
 function escapeAttr(str = "") {
   return String(str).replace(/"/g, "&quot;").replace(/</g, "&lt;");
@@ -123,7 +125,7 @@ async function renderSection(section) {
       grid.className = "products-grid";
 
       for (const product of productsByCat[cat.id] || []) {
-        grid.innerHTML += renderProduct(product, section.id);
+        grid.innerHTML += renderProduct(product, cat.id, section.id);
       }
 
       block.appendChild(grid);
@@ -135,7 +137,7 @@ async function renderSection(section) {
     grid.className = "products-grid";
 
     for (const product of products.default || []) {
-      grid.innerHTML += renderProduct(product, section.id);
+      grid.innerHTML += renderProduct(product, "", section.id);
     }
 
     container.appendChild(grid);
