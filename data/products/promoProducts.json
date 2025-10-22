@@ -17,14 +17,14 @@
         {
             "id": "promo-cosecha-tardia",
             "name": "Cosecha Nocturna",
-            "image": "promo-dr-lemon.jpg",
+            "image": "promo-cosecha-tardia.jpg",
             "description": "Tres Cosecha Tardía más 6 Speed.\nPROMO VÁLIDA HASTA LAS 00:00. ÚNICAMENTE EN EFECTIVO.",
             "price": 62000
         },
         {
             "id": "promo-novechento",
             "name": "Novechento Power Party",
-            "image": "promo-dr-lemon.jpg",
+            "image": "promo-novechento.jpg",
             "description": "Tres Novechento más 6 Speed.\nPROMO VÁLIDA HASTA LAS 00:00. ÚNICAMENTE EN EFECTIVO.",
             "price": 62000
         },
@@ -38,7 +38,7 @@
         {
             "id": "promo-smirnoff",
             "name": "Smirnoff Fresh Combo",
-            "image": "promo-dr-lemon.jpg",
+            "image": "promo-smirnoff.jpg",
             "description": "Tres Smirnoff más tres Sprite.\nPROMO VÁLIDA HASTA LAS 00:00.",
             "price": 100000
         }
