@@ -3,14 +3,14 @@
     {
       "id": "brahma",
       "name": "Brahma",
-      "image": "Brahma.jpg",
+      "image": "brahma.jpg",
       "description": "Botella de 1 litro.",
       "price": 10000
     },
     {
       "id": "corona",
       "name": "Corona",
-      "image": "Corona.jpg",
+      "image": "corona.jpg",
       "description": "Botella de 355 ml.",
       "price": 6000
     },
