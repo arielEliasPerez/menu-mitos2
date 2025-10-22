@@ -83,10 +83,10 @@ function renderSectionsNav(sections) {
   state.setActive = setActive;
 }
 
-function renderProduct(p) {
+function renderProduct(p, sectionId) {
   return `<article class="product-card horizontal" data-name="${escapeAttr(p.name)}" data-desc="${escapeAttr(p.description)}">
     <div class="product-image-wrap">
-      <img class="product-image" src="${p.image}" alt="${escapeAttr(p.name)}" loading="lazy" />
+      <img class="product-image" src="assets/products/${sectionId}/${p.image}" alt="${escapeAttr(p.name)}" loading="lazy" />
     </div>
     <div class="product-content">
       <div class="product-name">${p.name}</div>
@@ -123,7 +123,7 @@ async function renderSection(section) {
       grid.className = "products-grid";
 
       for (const product of productsByCat[cat.id] || []) {
-        grid.innerHTML += renderProduct(product);
+        grid.innerHTML += renderProduct(product, section.id);
       }
 
       block.appendChild(grid);
@@ -135,7 +135,7 @@ async function renderSection(section) {
     grid.className = "products-grid";
 
     for (const product of products.default || []) {
-      grid.innerHTML += renderProduct(product);
+      grid.innerHTML += renderProduct(product, section.id);
     }
 
     container.appendChild(grid);
