@@ -227,6 +227,13 @@
             "price": 10000
         },
         {
+            "id": "chupito-bob-marley",
+            "name": "Chupito Bob Marley",
+            "image": "chupito-bob-marley.jpg",
+            "description": "Pulpa de Frutilla, Licor de Durazno, Licor de Menta y Vodka",
+            "price": 10000
+        },
+        {
             "id": "chupito-cubanito",
             "name": "Chupito Cubanito",
             "image": "chupito-cubanito.jpg",
@@ -266,13 +273,6 @@
             "name": "Chupito Kriptonita",
             "image": "chupito-kriptonita.jpg",
             "description": "Pulpa de Ananá, Piña Colada, Licor de Menta y Vodka.",
-            "price": 10000
-        },
-        {
-            "id": "chupito-bob-marley",
-            "name": "Chupito Bob Marley",
-            "image": "chupito-bob-marley.jpg",
-            "description": "Pulpa de Frutilla, Licor de Durazno, Licor de Menta y Vodka",
             "price": 10000
         },
         {
