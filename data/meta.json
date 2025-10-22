@@ -5,7 +5,7 @@
     "secondary": "#3ba7ff",
     "bg": "#0b0f1a"
   },
-  "logo": "assets/logo-mitosbar.svg",
+  "logo": "assets/logo-mitosbar.png",
   "social": [
     { "name": "Instagram", "url": "https://instagram.com/mitosbar", "icon": "assets/instagram.svg" },
     { "name": "Facebook", "url": "https://facebook.com/mitosbar", "icon": "assets/facebook.svg" },

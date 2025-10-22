@@ -18,7 +18,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
   backdrop-filter: blur(6px); border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
-.logo { width: 48px; height: 48px; filter: drop-shadow(var(--glow)); }
+.logo { width: 60px; height: 52px; filter: drop-shadow(var(--glow)); }
 .brand { display: flex; gap: 12px; align-items: center; }
 .brand-text h1 { margin: 0; font-size: 18px; letter-spacing: 0.8px; }
 .brand-text p { margin: 0; color: var(--muted); font-size: 12px; }
