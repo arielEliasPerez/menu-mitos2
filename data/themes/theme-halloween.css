@@ -42,7 +42,7 @@ body.theme-halloween::before {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url("../../assets/themes/halloween-bg.png") no-repeat center top / cover;
-  z-index: -1; /* queda detrás del contenido */
+  z-index: -2; /* queda detrás del contenido */
 }
 
 .bg-fixed {
