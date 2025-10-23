@@ -1,0 +1,65 @@
+:root {
+  --bg: #0b0f1a;
+  --panel: #111625;
+  --text: #e8ecf1;
+  --muted: #9aa4b2;
+  --primary: #ff3b3b;   /* rojo neón */
+  --secondary: #3ba7ff; /* azul neón */
+  --glow: 0 0 12px rgba(255, 59, 59, 0.6), 0 0 24px rgba(59, 167, 255, 0.35);
+}
+
+/* Decoraciones neón */
+.section-header h2 {
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
+}
+.category-title {
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(59,167,255,0.8), 0 0 12px rgba(255,59,59,0.4);
+}
+
+/* Topbar animada */
+.topbar { animation: neonPulse 4s infinite alternate; }
+@keyframes neonPulse {
+  from { box-shadow: 0 0 6px rgba(129, 4, 4, 0.4), 0 0 12px rgba(228, 5, 5, 0.3); }
+  to   { box-shadow: 0 0 12px rgba(255,59,59,0.7), 0 0 24px rgba(212, 8, 8, 0.5); }
+}
+
+/* Hover social */
+.social-btn:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: 0 0 10px rgba(255,59,59,0.7), 0 0 20px rgba(59,167,255,0.6);
+}
+
+/* Cards exclusivos (estilo por defecto) */
+.product-card.exclusive {
+  border: 2px solid transparent;
+  background: linear-gradient(#0e1422, #0e1422) padding-box,
+              linear-gradient(135deg, purple, rgb(22, 184, 30)) border-box;
+  position: relative;
+  animation: neonExclusivePulse 0.3s infinite alternate;
+}
+@keyframes neonExclusivePulse {
+  from { box-shadow: 0 0 10px rgba(140, 5, 194, 0.4), 0 0 20px rgba(183, 59, 255, 0.2); }
+  to   { box-shadow: 0 0 20px rgba(165, 35, 182, 0.8), 0 0 40px rgba(232, 59, 255, 0.5); }
+}
+.product-card.exclusive::after {
+  content: "★ Exclusivo";
+  position: absolute; top: 8px; right: 12px;
+  font-size: 12px; font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(59,167,255,0.8);
+}
+
+/* Bordes de sección con neón azul (versión suave por defecto) */
+.section-block {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--panel), var(--panel)) padding-box,
+              linear-gradient(135deg, var(--secondary), rgba(59,167,255,0.25)) border-box;
+  box-shadow: 0 0 12px rgba(59,167,255,0.5), 0 0 24px rgba(59,167,255,0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.section-block:hover {
+  box-shadow: 0 0 16px rgba(59,167,255,0.8), 0 0 32px rgba(59,167,255,0.6);
+  transform: translateY(-2px);
+}

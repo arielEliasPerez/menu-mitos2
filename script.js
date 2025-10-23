@@ -205,10 +205,74 @@ function observeActiveSection() {
 }
 
 // ===============================
+// cambiar tema según festividad
+// ===============================
+async function applyTheme() {
+  try {
+    const res = await fetch("data/themes/themes.json");
+    const themes = await res.json();
+
+    // Fecha actual en formato MM-DD
+    const now = new Date();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    const today = `${month}-${day}`;
+
+    console.log("Fecha actual:", today);
+
+    let activeTheme = themes.default;
+
+    // Buscar si alguna festividad coincide
+    for (const key in themes) {
+      if (key === "default") continue;
+      const t = themes[key];
+      if (t.dateRange && t.dateRange.length === 2) {
+        const [start, end] = t.dateRange;
+        if (isInRange(today, start, end)) {
+          activeTheme = t;
+          break;
+        }
+      }
+    }
+
+    // Aplicar clase al body
+    document.body.classList.add(activeTheme.class);
+    console.log("Tema aplicado:", activeTheme);
+    // Si usás CSS separados, cargalo dinámicamente
+    if (activeTheme.cssFile) {
+      console.log("Cargando archivo CSS del tema:", activeTheme.cssFile);
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      console.log("Ruta del CSS:", `themes/${activeTheme.cssFile}`);
+      link.href = `data/themes/${activeTheme.cssFile}`;
+      document.head.appendChild(link);
+    }
+
+  } catch (err) {
+    console.error("Error cargando temas:", err);
+  }
+}
+
+// Función auxiliar para chequear rango de fechas MM-DD
+function isInRange(today, start, end) {
+  // Caso simple: rango dentro del mismo mes
+  if (start <= end) {
+    return today >= start && today <= end;
+  }
+  // Caso especial: rango cruza de diciembre a enero (ej. 12-30 a 01-02)
+  return today >= start || today <= end;
+}
+
+// ===============================
 // Inicialización
 // ===============================
+// Llamar al iniciar
+
+
 async function initMenu() {
   try {
+    applyTheme();
+
     const meta = await loadMeta();
     const sections = await loadSections();
     state.meta = meta;

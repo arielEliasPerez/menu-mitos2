@@ -1,0 +1,62 @@
+:root {
+  --bg: #0b0f1a;          /* fondo oscuro profundo */
+  --panel: #141a26;       /* panel gris azulado oscuro */
+  --text: #e8f5e9;        /* texto claro verdoso */
+  --muted: #9fa8a3;       /* gris verdoso */
+  --primary: #ff4da6;     /* fucsia floral */
+  --secondary: #66ff99;   /* verde brillante */
+  --glow: 0 0 14px rgba(255,77,166,0.7), 0 0 28px rgba(102,255,153,0.5);
+}
+
+body.theme-primavera {
+  background: var(--bg) url("../assets/themes/primavera-bg.png") no-repeat center top;
+  background-size: cover;
+  color: var(--text);
+}
+
+/* Títulos con brillo floral */
+.section-header h2,
+.category-title {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(255,77,166,0.8), 0 0 20px rgba(102,255,153,0.6);
+}
+
+/* Secciones con borde floral oscuro */
+.section-block {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--panel), var(--panel)) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  box-shadow: 0 0 18px rgba(255,77,166,0.6), 0 0 32px rgba(102,255,153,0.5);
+  animation: primaveraPulse 2s infinite alternate;
+}
+
+@keyframes primaveraPulse {
+  from { box-shadow: 0 0 12px rgba(255,77,166,0.5), 0 0 24px rgba(102,255,153,0.3); }
+  to   { box-shadow: 0 0 24px rgba(255,77,166,0.9), 0 0 48px rgba(102,255,153,0.7); }
+}
+
+/* Exclusivos con borde neón pulsante */
+.product-card.exclusive {
+  border: 2px solid transparent;
+  background: linear-gradient(#141a26, #141a26) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  position: relative;
+  animation: primaveraExclusivePulse 0.5s infinite alternate;
+}
+
+@keyframes primaveraExclusivePulse {
+  from { box-shadow: 0 0 12px rgba(255,77,166,0.6), 0 0 24px rgba(102,255,153,0.4); }
+  to   { box-shadow: 0 0 24px rgba(255,77,166,0.9), 0 0 48px rgba(102,255,153,0.7); }
+}
+
+.product-card.exclusive::after {
+  content: "🌺 Exclusivo";
+  position: absolute; top: 8px; right: 12px;
+  font-size: 12px; font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 0 0 8px rgba(102,255,153,0.8);
+}
+
+body.theme-primavera .theme-emojis::after {
+  content: " 🌸🌺";
+}

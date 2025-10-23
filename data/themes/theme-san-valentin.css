@@ -1,0 +1,88 @@
+:root {
+  --bg: #2b0008;          /* rojo oscuro profundo */
+  --panel: #3a0d15;       /* panel vino oscuro */
+  --text: #ffe6eb;        /* texto claro rosado */
+  --muted: #d48a9c;       /* rosa apagado */
+  --primary: #ff3366;     /* rojo/rosa pasión */
+  --secondary: #ff99cc;   /* rosa suave brillante */
+  --glow: 0 0 14px rgba(255,51,102,0.7), 0 0 28px rgba(255,153,204,0.5);
+}
+
+body.theme-san-valentin {
+  background: var(--bg) url("../assets/themes/san-valentin-bg.png") no-repeat center top;
+  background-size: cover;
+  color: var(--text);
+}
+
+/* Topbar romántico */
+body.theme-san-valentin .topbar {
+  background: linear-gradient(0deg, rgba(179,0,60,0.85), black);
+  border: 0px;
+  border-bottom: 1 solid rgba(235, 25, 217, 0.1);
+  animation: topbarValentinPulse 3s infinite alternate;
+}
+
+@keyframes topbarValentinPulse {
+  from { box-shadow: 0 0 10px rgba(255,51,102,0.5), 0 0 20px rgba(179,0,60,0.3); }
+  to   { box-shadow: 0 0 20px rgba(255,51,102,0.9), 0 0 40px rgba(179,0,60,0.6); }
+}
+
+body.theme-san-valentin #search {
+  background: #680416; /* rojo vino oscuro */
+  
+  color: var(--text);
+  box-shadow: 0 0 8px rgba(255, 51, 102, 0.384);
+}
+
+body.theme-san-valentin #search::placeholder {
+  color: var(--secondary);
+}
+
+
+/* Títulos */
+.section-header h2,
+.category-title {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(255,51,102,0.8), 0 0 20px rgba(255,153,204,0.6);
+  font-family: "Great Vibes", cursive, sans-serif; /* opcional */
+}
+
+/* Secciones */
+.section-block {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--panel), var(--panel)) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  box-shadow: 0 0 18px rgba(255,51,102,0.6), 0 0 32px rgba(255,153,204,0.5);
+  animation: valentinPulse 4s infinite alternate;
+}
+
+@keyframes valentinPulse {
+  from { box-shadow: 0 0 12px rgba(134, 5, 40, 0.5), 0 0 24px rgba(255,153,204,0.3); }
+  to   { box-shadow: 0 0 24px rgba(255,51,102,0.9), 0 0 48px rgba(255,153,204,0.7); }
+}
+
+/* Exclusivos */
+.product-card.exclusive {
+  border: 2px solid transparent;
+  background: linear-gradient(#3a0d15, #3a0d15) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  position: relative;
+  animation: valentinExclusivePulse 0.5s infinite alternate;
+}
+
+@keyframes valentinExclusivePulse {
+  from { box-shadow: 0 0 12px rgba(255,51,102,0.6), 0 0 24px rgba(255,153,204,0.4); }
+  to   { box-shadow: 0 0 24px rgba(255,51,102,0.9), 0 0 48px rgba(255,153,204,0.7); }
+}
+
+.product-card.exclusive::after {
+  content: "❤️ Exclusivo";
+  position: absolute; top: 8px; right: 12px;
+  font-size: 12px; font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 0 0 8px rgba(255,153,204,0.8);
+}
+
+body.theme-san-valentin .theme-emojis::after {
+  content: " ❤️💘";
+}

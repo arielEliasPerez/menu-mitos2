@@ -1,0 +1,91 @@
+{
+  "default": {
+    "id": "default",
+    "name": "Tema Neón",
+    "class": "theme-default",
+    "colors": {
+      "primary": "#ff3b3b",
+      "secondary": "#3ba7ff",
+      "bg": "#0b0f1a"
+    },
+    "cssFile": "theme-default.css"
+  },
+
+  "san-valentin": {
+    "id": "san-valentin",
+    "name": "San Valentín",
+    "dateRange": ["02-14", "02-16"],
+    "class": "theme-san-valentin",
+    "colors": {
+      "primary": "#ff4d6d",
+      "secondary": "#ffb3c6",
+      "bg": "#1a000f"
+    },
+    "cssFile": "theme-san-valentin.css"
+  },
+
+  "dia-mujer": {
+    "id": "dia-mujer",
+    "name": "Día de la Mujer",
+    "dateRange": ["03-07", "03-9"],
+    "class": "theme-dia-mujer",
+    "colors": {
+      "primary": "#ff66b2",
+      "secondary": "#ff33cc",
+      "bg": "#1a001a"
+    },
+    "cssFile": "theme-dia-mujer.css"
+  },
+
+  "primavera": {
+    "id": "primavera",
+    "name": "Primavera",
+    "dateRange": ["09-21", "09-22"],
+    "class": "theme-primavera",
+    "colors": {
+      "primary": "#ff7518",
+      "secondary": "#8e44ad",
+      "bg": "#0a0502"
+    },
+    "cssFile": "theme-primavera.css"
+  },
+
+  "halloween": {
+    "id": "halloween",
+    "name": "Halloween",
+    "dateRange": ["10-20", "10-31"],
+    "class": "theme-halloween",
+    "colors": {
+      "primary": "#ff7518",
+      "secondary": "#8e44ad",
+      "bg": "#0a0502"
+    },
+    "cssFile": "theme-halloween.css"
+  },
+
+  "navidad": {
+    "id": "navidad",
+    "name": "Navidad",
+    "dateRange": ["12-20", "12-26"],
+    "class": "theme-navidad",
+    "colors": {
+      "primary": "#ff0000",
+      "secondary": "#00ff66",
+      "bg": "#06120a"
+    },
+    "cssFile": "theme-navidad.css"
+  },
+
+  "ano-nuevo": {
+    "id": "ano-nuevo",
+    "name": "Año Nuevo",
+    "dateRange": ["12-31", "01-02"],
+    "class": "theme-ano-nuevo",
+    "colors": {
+      "primary": "#ffd700",
+      "secondary": "#ffffff",
+      "bg": "#000000"
+    },
+    "cssFile": "theme-ano-nuevo.css"
+  }
+}

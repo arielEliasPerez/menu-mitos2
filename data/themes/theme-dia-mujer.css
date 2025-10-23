@@ -1,0 +1,85 @@
+:root {
+  --bg: #30033d;          /* negro rojizo profundo */
+  --panel: #000000a1;       /* panel vino oscuro */
+  --text: #f8dede;        /* texto claro con tinte rosado */
+  --muted: #c40dba;       /* rojo apagado */
+  --primary: #e91ade;     /* rojo pasión */
+  --secondary: #f715f7;   /* burdeos sensual */
+  --glow: 0 0 14px rgba(255,26,26,0.7), 0 0 28px rgba(179,0,60,0.5);
+}
+
+body.theme-dia-mujer {
+  background: var(--bg) url("../assets/themes/dia-mujer-bg.png") no-repeat center top;
+  background-size: cover;
+  color: var(--text);
+}
+
+/* 🔻 Topbar degradado vertical */
+body.theme-dia-mujer .topbar {
+  background: linear-gradient(to bottom, black, rgb(141, 5, 141));
+  border: 0px;
+  animation: mujerTopbarPulse 3s infinite alternate;
+}
+
+@keyframes mujerTopbarPulse {
+  from { box-shadow: 0 0 10px rgba(235, 4, 215, 0.5), 0 0 20px rgba(179,0,60,0.3); }
+  to   { box-shadow: 0 0 20px rgba(199, 7, 224, 0.9), 0 0 40px rgba(179,0,60,0.6); }
+}
+
+/* 🔻 Buscador adaptado */
+body.theme-dia-mujer #search {
+  background: rgb(59, 2, 59);
+  color: white);
+  box-shadow: 0 0 8px rgba(255,26,26,0.6);
+}
+body.theme-dia-mujer #search::placeholder {
+  color: rgb(182, 89, 185);
+}
+
+
+/* Títulos con brillo rojo intenso */
+.section-header h2,
+.category-title {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(255,26,26,0.8), 0 0 20px rgba(179,0,60,0.6);
+}
+
+/* Secciones con borde sensual */
+.section-block {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--panel), var(--panel)) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  box-shadow: 0 0 18px rgba(255,26,26,0.6), 0 0 32px rgba(179,0,60,0.5);
+  animation: mujerPulse 2s infinite alternate;
+}
+
+@keyframes mujerPulse {
+  from { box-shadow: 0 0 12px rgba(173, 8, 206, 0.5), 0 0 24px rgba(179,0,60,0.3); }
+  to   { box-shadow: 0 0 24px rgba(160, 2, 233, 0.9), 0 0 48px rgba(179,0,60,0.7); }
+}
+
+/* Exclusivos con borde neón pulsante */
+.product-card.exclusive {
+  border: 2px solid transparent;
+  background: linear-gradient(#1e0a0a, #1e0a0a) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  position: relative;
+  animation: mujerExclusivePulse 0.5s infinite alternate;
+}
+
+@keyframes mujerExclusivePulse {
+  from { box-shadow: 0 0 12px rgba(174, 16, 247, 0.6), 0 0 24px rgba(179,0,60,0.4); }
+  to   { box-shadow: 0 0 24px rgba(238, 25, 202, 0.9), 0 0 48px rgba(179,0,60,0.7); }
+}
+
+.product-card.exclusive::after {
+  content: "💋 Exclusivo";
+  position: absolute; top: 8px; right: 12px;
+  font-size: 12px; font-weight: bold;
+  color: var(--secondary);
+  text-shadow: 0 0 8px rgba(179,0,60,0.8);
+}
+
+body.theme-dia-mujer .theme-emojis::after {
+  content: " 💄💋";
+}

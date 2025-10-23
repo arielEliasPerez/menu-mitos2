@@ -1,0 +1,89 @@
+:root {
+  --primary: #ff7518;   /* naranja calabaza */
+  --secondary: #d30808; /* púrpura oscuro */
+  --bg: #0a0502;        /* fondo casi negro */
+}
+
+/* Topbar halloween */
+body.theme-halloween .topbar {
+  background: linear-gradient(0deg, rgba(85, 1, 29, 0.85), black);
+  border: 0px;
+    border-bottom: 1 solid rgba(235, 25, 217, 0.1);
+  animation: topbarHalloweenPulse 1s infinite alternate;
+}
+
+@keyframes topHalloweenPulse {
+  from { box-shadow: 0 0 10px rgba(255,51,102,0.5), 0 0 20px rgba(179,0,60,0.3); }
+  to   { box-shadow: 0 0 20px rgba(255,51,102,0.9), 0 0 40px rgba(179,0,60,0.6); }
+}
+
+body.theme-halloween #search {
+  background: #2002078e; /* rojo vino oscuro */
+  color: var(--text);
+  box-shadow: 0 0 8px rgba(49, 3, 15, 0.384);
+}
+
+body.theme-halloween #search::placeholder {
+  color: red;
+}
+
+/* Fondo general */
+body.theme-halloween {
+  background: var(--bg) url("../assets/themes/halloween-bg.png") no-repeat center top;
+  background-size: cover;
+  color: #f5d3d3;
+}
+
+/* Secciones con borde neón púrpura/naranja */
+body.theme-halloween .section-block {
+  border: 2px solid transparent;
+  background: linear-gradient(#0a0502, #0a0502) padding-box,
+              linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  box-shadow: 0 0 16px rgba(255,117,24,0.6), 0 0 28px rgba(142,68,173,0.5);
+  animation: halloweenPulse 2s infinite alternate;
+}
+
+@keyframes halloweenPulse {
+  from {
+    box-shadow: 0 0 10px rgba(255,117,24,0.5), 0 0 20px rgba(142,68,173,0.4);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255,117,24,0.8), 0 0 40px rgba(142,68,173,0.7);
+  }
+}
+
+/* Títulos de sección y categoría con efecto “espeluznante” */
+body.theme-halloween .section-header h2,
+body.theme-halloween .category-title {
+  color: var(--primary);
+  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
+  font-family: "Creepster", cursive, sans-serif; /* opcional, fuente temática */
+}
+
+/* Línea divisora de categorías con telaraña */
+body.theme-halloween .category-title::after {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  box-shadow: 0 0 8px rgba(255,117,24,0.8), 0 0 16px rgba(142,68,173,0.6);
+  mask-image: url("../assets/themes/web-pattern.svg"); /* opcional: patrón de telaraña */
+  mask-repeat: repeat-x;
+  mask-size: contain;
+}
+
+/* Productos exclusivos con marco especial */
+body.theme-halloween .product-card.exclusive {
+  border: 2px solid transparent;
+  background: linear-gradient(#0a0502, #0a0502) padding-box,
+              linear-gradient(135deg, orange, purple) border-box;
+  box-shadow: 0 0 16px rgba(255,117,24,0.7), 0 0 28px rgba(142,68,173,0.6);
+}
+
+body.theme-halloween .product-card.exclusive::after {
+  content: "🎃 Exclusivo";
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(142,68,173,0.8);
+}
+
+/* Emojis en el encabezado */
+body.theme-halloween .theme-emojis::after {
+  content: " 🎃👻";
+}
