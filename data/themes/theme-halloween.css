@@ -30,10 +30,7 @@ body.theme-halloween #search::placeholder {
 /* Fondo general */
 
 body.theme-halloween {
-  background: var(--bg) url("../../assets/themes/halloween-bg.png") no-repeat center top;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -2;
+  
   color: #f5d3d3;
 }
 
@@ -45,11 +42,11 @@ body.theme-halloween::before {
   z-index: -3; /* queda detrás del contenido */
 }
 
-.bg-fixed {
+.site-wrapper{
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url("../../assets/themes/halloween-bg.png") no-repeat center top / cover;
-  z-index: -1;
+  
 }
 
 /* Secciones con borde neón púrpura/naranja */
