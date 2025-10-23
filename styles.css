@@ -50,7 +50,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
   border: 1px solid rgba(255,255,255,0.08);
 }
 .sections-nav a.active {
-  background: linear-gradient(90deg, rgba(255,59,59,0.18), rgba(59,167,255,0.18));
+  background: linear-gradient(90deg, rgba(255,59,59,0.18), rgba(137, 6, 170, 0.363));
   border-color: rgba(255,255,255,0.16);
   box-shadow: var(--glow);
 }
@@ -173,10 +173,10 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 
 @keyframes neonPulse {
   from {
-    box-shadow: 0 0 6px rgba(255,59,59,0.4), 0 0 12px rgba(59,167,255,0.3);
+    box-shadow: 0 0 6px rgba(129, 4, 4, 0.4), 0 0 12px rgba(228, 5, 5, 0.3);
   }
   to {
-    box-shadow: 0 0 12px rgba(255,59,59,0.7), 0 0 24px rgba(59,167,255,0.5);
+    box-shadow: 0 0 12px rgba(255,59,59,0.7), 0 0 24px rgba(212, 8, 8, 0.5);
   }
 }
 
@@ -225,25 +225,24 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); f
 /* Bordes animados de seccion */
 .section-block {
   background: var(--panel);
-  border: 2px solid transparent;
   border-radius: 14px;
   padding: 16px;
   scroll-margin-top: 128px;
-  animation: neonSectionPulse 4s infinite alternate;
+  animation: neonSectionPulse 5s infinite alternate;
 
   /* Borde neón azul */
-  background: linear-gradient(#111625, #111625) padding-box,
-              linear-gradient(135deg, var(--secondary), rgba(59,167,255,0.2)) border-box;
-  box-shadow: 0 0 12px rgba(59,167,255,0.5), 0 0 24px rgba(59,167,255,0.3);
+  border: 2px solid blue;
   position: relative;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 @keyframes neonSectionPulse {
   from {
-    box-shadow: 0 0 10px rgba(25, 140, 206, 0.274), 0 0 20px rgba(59, 167, 255, 0.123);
+    border: 2px solid rgb(28, 28, 250);
+    box-shadow: 0 0 20px rgba(37, 37, 243, 0.897), 0 0 12px rgba(57, 57, 240, 0.829);
   }
   to {
-    box-shadow: 0 0 20px rgba(45, 112, 201, 0.8), 0 0 20px rgba(59,167,255,0.5);
+    border: 2px solid rgb(2, 2, 80);
+    box-shadow: 0 0 10px transparent, 0 0 20px transparent;
   }
 }
