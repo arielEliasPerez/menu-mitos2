@@ -29,8 +29,10 @@ body.theme-halloween #search::placeholder {
 
 /* Fondo general */
 body.theme-halloween {
-  background: var(--bg) url("../assets/themes/halloween-bg.png") no-repeat center top;
+  background: var(--bg) url("../../assets/themes/halloween-bg.png") no-repeat center top;
   background-size: cover;
+  background-attachment: fixed;
+
   color: #f5d3d3;
 }
 
@@ -41,14 +43,16 @@ body.theme-halloween .section-block {
               linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
   box-shadow: 0 0 16px rgba(255,117,24,0.6), 0 0 28px rgba(142,68,173,0.5);
   animation: halloweenPulse 2s infinite alternate;
+  background: rgba(0, 0, 0, 0.795);
 }
 
 @keyframes halloweenPulse {
   from {
-    box-shadow: 0 0 10px rgba(255,117,24,0.5), 0 0 20px rgba(142,68,173,0.4);
+    box-shadow: 0 0 10px rgba(145, 7, 7, 0.623), 0 0 20px rgba(142,68,173,0.4);
   }
   to {
-    box-shadow: 0 0 20px rgba(255,117,24,0.8), 0 0 40px rgba(142,68,173,0.7);
+    border: 2px solid red;
+    box-shadow: 0 0 20px rgba(156, 6, 6, 0.8), 0 0 20px rgba(142,68,173,0.7);
   }
 }
 
