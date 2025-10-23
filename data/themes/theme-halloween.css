@@ -51,18 +51,19 @@ body.theme-halloween .section-block {
   border: 2px solid transparent;
   background: linear-gradient(#0a0502, #0a0502) padding-box,
               linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
-  box-shadow: 0 0 16px rgba(255,117,24,0.6), 0 0 28px rgba(142,68,173,0.5);
+  
   animation: halloweenPulse 2s infinite alternate;
   background: rgba(0, 0, 0, 0.795);
 }
 
 @keyframes halloweenPulse {
   from {
-    box-shadow: 0 0 10px rgba(145, 7, 7, 0.623), 0 0 20px rgba(142,68,173,0.4);
+    box-shadow: 0 0 20px rgba(156, 6, 6, 0.315), 0 0 20px rgba(142,68,173,0.7);
   }
   to {
     border: 2px solid red;
-    box-shadow: 0 0 20px rgba(156, 6, 6, 0.8), 0 0 20px rgba(142,68,173,0.7);
+    box-shadow: 0 0 20px rgba(226, 4, 4, 0.884), 0 0 30px rgba(204, 4, 4, 0.4);
+    
   }
 }
 
