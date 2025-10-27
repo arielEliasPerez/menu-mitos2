@@ -2,13 +2,16 @@
   --primary: #ff7518;   /* naranja calabaza */
   --secondary: #d30808; /* púrpura oscuro */
   --bg: #0a0502;        /* fondo casi negro */
+  --glow: 0 0 14px rgba(219, 134, 7, 0.897), 0 0 28px rgba(255, 0, 0, 0.5);
 }
+
+
 
 /* Topbar halloween */
 body.theme-halloween .topbar {
   background: linear-gradient(0deg, rgba(85, 1, 29, 0.85), black);
   border: 0px;
-    border-bottom: 1 solid rgba(235, 25, 217, 0.1);
+    border-bottom: 0 solid rgba(235, 25, 25, 0.61);
   animation: topbarHalloweenPulse 1s infinite alternate;
 }
 
@@ -25,6 +28,16 @@ body.theme-halloween #search {
 
 body.theme-halloween #search::placeholder {
   color: red;
+}
+
+
+/* 🔸 Sección activa en el menú */
+body.theme-halloween .menu-item.active,
+body.theme-halloween .menu-item.selected {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(255, 8, 8, 0.6);
+  border-bottom: 2px solid orange;
 }
 
 /* Fondo general */
@@ -51,13 +64,13 @@ body.theme-halloween .section-block {
   background: linear-gradient(#0a0502, #0a0502) padding-box,
               linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
   
-  animation: halloweenPulse 2s infinite alternate;
+  animation: halloweenPulse 1s infinite alternate;
   background: rgba(0, 0, 0, 0.795);
 }
 
 @keyframes halloweenPulse {
   from {
-    box-shadow: 0 0 20px rgba(156, 6, 6, 0.315), 0 0 20px rgba(142,68,173,0.7);
+    box-shadow: 0 0 20px rgba(15, 1, 1, 0.315), 0 0 20px rgba(0, 0, 0, 0.7);
   }
   to {
     border: 2px solid red;
@@ -85,19 +98,39 @@ body.theme-halloween .category-title::after {
 
 /* Productos exclusivos con marco especial */
 body.theme-halloween .product-card.exclusive {
-  border: 2px solid transparent;
-  background: linear-gradient(#0a0502, #0a0502) padding-box,
-              linear-gradient(135deg, orange, purple) border-box;
+  background-color: #0a0502;
   box-shadow: 0 0 16px rgba(255,117,24,0.7), 0 0 28px rgba(142,68,173,0.6);
+  animation: halloweenExclusivePulse 0.5s infinite alternate;
+}
+
+@keyframes halloweenExclusivePulse {
+  from { 
+    border: 2px solid rgb(146, 89, 3);
+    box-shadow: 0 0 12px rgb(241, 111, 4), 0 0 24px rgba(119, 1, 1, 0.4); 
+  }
+  to   { 
+    border: 2px solid transparent;
+    box-shadow: 0 0 24px rgb(121, 2, 2), 0 0 48px rgb(131, 60, 2); 
+  }
 }
 
 body.theme-halloween .product-card.exclusive::after {
   content: "🎃 Exclusivo";
   color: var(--secondary);
-  text-shadow: 0 0 6px rgba(142,68,173,0.8);
+  text-shadow: 0 0 6px rgba(110, 2, 2, 0.8);
 }
 
 /* Emojis en el encabezado */
 body.theme-halloween .theme-emojis::after {
   content: " 🎃👻";
+}
+
+
+/* 🔸 Sección activa en el menú */
+body.theme-halloween .menu-item.active,
+body.theme-halloween .menu-item.selected {
+  color: var(--primary);
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(255, 8, 8, 0.6);
+  border-bottom: 2px solid var(--primary);
 }

@@ -72,7 +72,7 @@ function renderSectionsNav(sections) {
     e.preventDefault();
     document.getElementById(`section-${a.dataset.id}`).scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "start" ,
     });
   });
 

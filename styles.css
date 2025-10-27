@@ -18,6 +18,32 @@ html, body {
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
+/* Base: alturas del header y topbar (ajustá a tus valores reales) */
+:root {
+  --site-header-height: 56px;  /* bloque de “Mitos bar” + redes */
+  --topbar-height: 48px;       /* barra de navegación/buscador */
+  --anchor-offset: calc(var(--site-header-height) + var(--topbar-height));
+}
+
+/* Aplica el offset global para anclas */
+html {
+  scroll-padding-top: var(--anchor-offset);
+}
+
+/* Si preferís por sección, podés combinarlo con scroll-margin-top */
+section[id],
+.section-block[id],
+.category-section[id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+/* Suaviza el scroll si lo usás */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 .logo { width: 60px; height: 52px; filter: drop-shadow(var(--glow)); }
 .brand { display: flex; gap: 12px; align-items: center; }
 .brand-text h1 { margin: 0; font-size: 18px; letter-spacing: 0.8px; }
@@ -45,7 +71,7 @@ html, body {
 }
 
 .sections-nav {
-  display: flex; gap: 8px; overflow-x: auto; scrollbar-width: thin; padding-bottom: 4px;
+  display: flex; gap: 9px; overflow-x: auto; scrollbar-width: thin; padding: 4px;
 }
 .sections-nav a {
   flex: 0 0 auto; padding: 8px 12px; border-radius: 999px;
