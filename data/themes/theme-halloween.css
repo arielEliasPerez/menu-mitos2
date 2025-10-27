@@ -5,13 +5,24 @@
   --glow: 0 0 14px rgba(219, 134, 7, 0.897), 0 0 28px rgba(255, 0, 0, 0.5);
 }
 
+/*Fondo sangriento del header*/
+body.theme-halloween .site-header {
+  background: url("../../assets/themes/halloween-blood.png") repeat-x top / contain;
+  background-color: black;
+}
 
+/*Título Mitos Bar*/
+body.theme-halloween .site-header h1 {
+  font-family: "Jolly Lodger", cursive, sans-serif;
+  font-size: 24px;
+  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
+}
 
 /* Topbar halloween */
 body.theme-halloween .topbar {
   background: linear-gradient(0deg, rgba(85, 1, 29, 0.85), black);
   border: 0px;
-    border-bottom: 0 solid rgba(235, 25, 25, 0.61);
+  border-bottom: 0 solid rgba(235, 25, 25, 0.61);
   animation: topbarHalloweenPulse 1s infinite alternate;
 }
 
@@ -50,7 +61,6 @@ body.theme-halloween {
   color: #f5d3d3;
 }
 
-
 .bg-fixed {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -80,11 +90,16 @@ body.theme-halloween .section-block {
 }
 
 /* Títulos de sección y categoría con efecto “espeluznante” */
-body.theme-halloween .section-header h2,
-body.theme-halloween .category-title {
+body.theme-halloween .section-header h2 {
   color: var(--primary);
   text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
-  font-family: "Creepster", cursive, sans-serif; /* opcional, fuente temática */
+  font-family: "Eater", cursive, sans-serif;
+}
+
+body.theme-halloween .category-title {
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
+  font-family: "Mystery Quest", cursive, sans-serif;
 }
 
 /* Línea divisora de categorías con telaraña */
@@ -134,3 +149,19 @@ body.theme-halloween .menu-item.selected {
   text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(255, 8, 8, 0.6);
   border-bottom: 2px solid var(--primary);
 }
+
+
+/*Telarañas esquina*/
+body.theme-halloween .topbar::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* justo debajo del header */
+  width: 280px; height: 180px;
+  background: url("../../assets/themes/halloween-web.png") no-repeat center/contain;
+  opacity: 1;
+  pointer-events: none;
+}
+
+body.theme-halloween .topbar::after  { right: 0; }
+
+
