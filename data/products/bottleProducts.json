@@ -1,10 +1,10 @@
 {
     "champagne": [
         {
-            "id": "novechento",
-            "name": "Novechento",
-            "image": "novechento.jpg",
-            "description": "Novechento de 750 ml con 2 Speed.",
+            "id": "novecento",
+            "name": "Novecento",
+            "image": "novecento.jpg",
+            "description": "Novecento de 750 ml con 2 Speed.",
             "price": 24000
         },
         {
