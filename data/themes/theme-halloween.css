@@ -2,7 +2,7 @@
   --primary: #ff7518;   /* naranja calabaza */
   --secondary: #d30808; /* púrpura oscuro */
   --bg: #0a0502;        /* fondo casi negro */
-  --glow: 0 0 14px rgba(219, 134, 7, 0.897), 0 0 28px rgba(255, 0, 0, 0.5);
+  --glow: 0 0 10px rgba(219, 134, 7, 0.897), 0 0 8px rgba(255, 0, 0, 0.5);
 }
 
 /*Fondo sangriento del header*/
@@ -42,17 +42,19 @@ body.theme-halloween #search::placeholder {
 }
 
 
-/* 🔸 Sección activa en el menú */
-body.theme-halloween .menu-item.active,
-body.theme-halloween .menu-item.selected {
-  color: white;
-  font-weight: bold;
-  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(255, 8, 8, 0.6);
-  border-bottom: 2px solid orange;
+/*Nav Section activa*/
+.sections-nav a {
+  background-color: rgba(165, 6, 6, 0.171);
 }
 
-/* Fondo general */
+.sections-nav a.active {
+  background-color: rgba(255, 0, 0, 0.171);
+  box-shadow: var(--glow);
+}
 
+
+
+/* Fondo general */
 body.theme-halloween {
   background: transparent;
   background-size: cover;
@@ -68,7 +70,9 @@ body.theme-halloween {
   z-index: -1;
 }
 
-/* Secciones con borde neón púrpura/naranja */
+
+
+/* Secciones con borde neón rojo */
 body.theme-halloween .section-block {
   border: 2px solid transparent;
   background: linear-gradient(#0a0502, #0a0502) padding-box,
@@ -89,18 +93,22 @@ body.theme-halloween .section-block {
   }
 }
 
+
+
 /* Títulos de sección y categoría con efecto “espeluznante” */
 body.theme-halloween .section-header h2 {
   color: var(--primary);
-  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
+  text-shadow: 0 0 5px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
   font-family: "Eater", cursive, sans-serif;
 }
 
 body.theme-halloween .category-title {
   color: var(--secondary);
-  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
+  text-shadow: 0 0 2px rgba(255,117,24,0.8), 0 0 12px rgba(142,68,173,0.6);
   font-family: "Mystery Quest", cursive, sans-serif;
 }
+
+
 
 /* Línea divisora de categorías con telaraña */
 body.theme-halloween .category-title::after {
@@ -110,6 +118,8 @@ body.theme-halloween .category-title::after {
   mask-repeat: repeat-x;
   mask-size: contain;
 }
+
+
 
 /* Productos exclusivos con marco especial */
 body.theme-halloween .product-card.exclusive {
@@ -135,20 +145,17 @@ body.theme-halloween .product-card.exclusive::after {
   text-shadow: 0 0 6px rgba(110, 2, 2, 0.8);
 }
 
-/* Emojis en el encabezado */
+
+
+/* Emojis en el Título Mitos Bar */
 body.theme-halloween .theme-emojis::after {
   content: " 🎃👻";
 }
 
 
-/* 🔸 Sección activa en el menú */
-body.theme-halloween .menu-item.active,
-body.theme-halloween .menu-item.selected {
-  color: var(--primary);
-  font-weight: bold;
-  text-shadow: 0 0 6px rgba(255,117,24,0.8), 0 0 12px rgba(255, 8, 8, 0.6);
-  border-bottom: 2px solid var(--primary);
-}
+
+
+
 
 
 /*Telarañas esquina*/
@@ -162,6 +169,6 @@ body.theme-halloween .topbar::after {
   pointer-events: none;
 }
 
-body.theme-halloween .topbar::after  { right: 0; }
+body.theme-halloween .topbar::after  { right: -17px; }
 
 

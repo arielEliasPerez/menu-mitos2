@@ -52,8 +52,8 @@ html {
 .socials { display: flex; gap: 10px; }
 .social-btn {
   display: inline-flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px; border-radius: 8px; background: #0e1422;
-  border: 1px solid rgba(255,255,255,0.08);
+  width: 36px; height: 36px; border-radius: 8px;
+  
   transition: all 0.3s ease;
 }
 .social-btn img { width: 20px; height: 20px; filter: drop-shadow(var(--glow)); }
@@ -70,8 +70,13 @@ html {
   .topbar { grid-template-columns: 1fr; gap: 8px; top: 64px; }
 }
 
+
+
+
 .sections-nav {
-  display: flex; gap: 9px; overflow-x: auto; scrollbar-width: thin; padding: 4px;
+  display: flex; gap: 9px; overflow-x: auto; scrollbar-width: thin; 
+  padding: 6px;
+  
 }
 .sections-nav a {
   flex: 0 0 auto; padding: 8px 12px; border-radius: 999px;
@@ -82,6 +87,8 @@ html {
   border-color: rgba(255,255,255,0.16);
   box-shadow: var(--glow);
 }
+
+
 
 .search-wrap { display: flex; align-items: center; }
 #search {
@@ -100,6 +107,8 @@ html {
   padding: 16px;
   scroll-margin-top: 128px;
 }
+
+
 
 .section-header {
   display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px;
@@ -160,4 +169,16 @@ html {
 .site-footer {
   border-top: 1px solid rgba(255,255,255,0.06);
   margin-top: 20px; padding: 20px 16px; color: var(--muted); text-align: center;
+}
+
+
+/* Ocultar scrollbar en navegadores modernos */
+.sections-nav {
+  overflow-x: auto;
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge antiguos */
+}
+
+.sections-nav::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }

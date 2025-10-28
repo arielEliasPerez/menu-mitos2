@@ -184,25 +184,50 @@ function filterProducts(term) {
   });
 }
 
-// ===============================
-// Scrollspy (resaltar sección activa)
-// ===============================
 function observeActiveSection() {
-  const sections = qsa(".section-block");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((e) => e.isIntersecting)
-        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-      if (visible[0]) {
-        const id = visible[0].target.id.replace("section-", "");
-        state.setActive?.(id);
+  const sections = Array.from(qsa(".section-block"));
+  const nav = document.getElementById("sections-nav");
+  let lastActiveId = null;
+
+  function update() {
+    let currentId = null;
+
+    for (const sec of sections) {
+      const rect = sec.getBoundingClientRect();
+      if (rect.top <= 500) {                         // tu umbral
+        currentId = sec.id.replace("section-", "");
       }
-    },
-    { rootMargin: "-40% 0px -50% 0px", threshold: [0, 0.25, 0.5] }
-  );
-  sections.forEach((sec) => observer.observe(sec));
+    }
+
+    if (currentId && currentId !== lastActiveId) {
+      lastActiveId = currentId;
+
+      // Resaltar en el nav
+      nav.querySelectorAll("a").forEach(a => a.classList.remove("active"));
+      const link = nav.querySelector(`a[href="#section-${currentId}"]`);
+      if (link) {
+        link.classList.add("active");
+
+        // 👇 en vez de scrollIntoView, cálculo manual
+        const navRect = nav.getBoundingClientRect();
+        const linkRect = link.getBoundingClientRect();
+        const offset = link.offsetLeft - nav.offsetLeft;
+        const targetScroll = offset - (navRect.width / 2 - linkRect.width / 2);
+
+        nav.scrollTo({
+          left: targetScroll,
+          behavior: "smooth"
+        });
+      }
+    }
+  }
+
+  window.addEventListener("scroll", () => requestAnimationFrame(update), { passive: true });
+  window.addEventListener("resize", () => requestAnimationFrame(update), { passive: true });
+
+  update(); // inicial
 }
+
 
 // ===============================
 // cambiar tema según festividad
