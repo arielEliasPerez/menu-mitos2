@@ -32,14 +32,14 @@
             "id": "melon-speed",
             "name": "Melon con Speed",
             "image": "melon-speed.jpg",
-            "description": "Licor de Melón, Vodka y Speed.",
+            "description": "Una medida de Licor de Melón y una lata de Speed.",
             "price": 15000
         },
         {
             "id": "jagger-speed",
-            "name": "Jagger con Speed",
+            "name": "Jager con Speed",
             "image": "jagger-speed.jpg",
-            "description": "Medida de Jägermeister y un Speed.",
+            "description": "Una medida de Jägermeister y una lata de Speed.",
             "price": 15000
         },
         {
@@ -117,7 +117,7 @@
         {
             "id": "pantera-rosa",
             "name": "Pantera Rosa",
-            "image": "panter-rosa.jpg",
+            "image": "pantera-rosa.jpg",
             "description": "Vodka, Piña Colada, Granadina y Pulpa de Ananá.",
             "price": 20000
         }
@@ -155,14 +155,14 @@
             "id": "gin-tonic",
             "name": "Gin Tonic",
             "image": "gin-tonic.jpg",
-            "description": "Ginebra, Agua Tónica y Limón.",
+            "description": "Gin, Agua Tónica y Limón.",
             "price": 20000
         },
         {
             "id": "gin-tonic-frutos-rojos",
             "name": "Gin Tonic (Frutos Rojos)",
             "image": "gin-tonic-frutos-rojos.jpg",
-            "description": "Ginebra, Agua Tónica y Frutos Rojos.",
+            "description": "Gin, Agua Tónica y Frutos Rojos.",
             "price": 20000
         },
         {
