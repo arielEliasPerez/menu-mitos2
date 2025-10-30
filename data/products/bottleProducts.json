@@ -78,7 +78,7 @@
             "id": "smirnoff-saborizado",
             "name": "Smirnoff Saborizado",
             "image": "smirnoff-saborizado.jpg",
-            "description": "Smirnoff Saborizado (Frutilla, Maracuyá o Manzana Verde) con 2 Speed, Jugo de Naranja o Sprite.",
+            "description": "Smirnoff Saborizado (Frutilla, Sandía, Maracuyá o Manzana Verde) con 2 Speed, Jugo de Naranja o Sprite.",
             "price": 38000
         },
         {
@@ -99,15 +99,8 @@
             "id": "absolut-saborizado",
             "name": "Absolut Saborizado",
             "image": "absolut-saborizado.jpg",
-            "description": "Absolut Saborizado con 2 Speed, Jugo de Naranja o Sprite.",
+            "description": "Absolut Saborizado (Pera o Mango) con 2 Speed, Jugo de Naranja o Sprite.",
             "price": 70000
-        },
-        {
-            "id": "pravda",
-            "name": "Pravda",
-            "image": "pravda.jpg",
-            "description": "Vodka Pravda con 2 Speed, Jugo de Naranja o Sprite.",
-            "price": 120000
         }
     ],
     "spirits": [
@@ -138,16 +131,16 @@
             "image": "fernet-coca-cola.jpg",
             "description": "Fernet Branca de 0.75 Litro con una Coca-Cola de 2.25 Litro.",
             "price": 50000
-        },
-        {
+        }
+    ],
+    "whiskey": [
+            {
             "id": "red-label",
             "name": "Red Label",
             "image": "red-label.jpg",
             "description": "Whisky Johnnie Walker Red Label de 0.75 Litro.",
             "price": 100000
-        }
-    ],
-    "exclusive": [
+        },
         {
             "id": "black-label",
             "name": "Black Label",
@@ -161,7 +154,9 @@
             "image": "jack-daniels.jpg",
             "description": "Whisky Jack Daniel's Old No.7 de 750 ml.",
             "price": 120000
-        },
+        }
+    ],
+    "exclusive": [
         {
             "id": "pravda",
             "name": "Pravda",

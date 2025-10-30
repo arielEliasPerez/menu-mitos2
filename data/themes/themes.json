@@ -27,7 +27,7 @@
   "dia-mujer": {
     "id": "dia-mujer",
     "name": "Día de la Mujer",
-    "dateRange": ["03-07", "03-9"],
+    "dateRange": ["03-07", "03-09"],
     "class": "theme-dia-mujer",
     "colors": {
       "primary": "#ff66b2",
