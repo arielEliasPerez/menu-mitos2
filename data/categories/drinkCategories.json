@@ -1,4 +1,5 @@
 [
+    { "id": "pitcher", "name": "Jarra" },
     { "id": "classic", "name": "Clásicos Directos" },
     { "id": "fruity-sweet", "name": "Frutales o Dulces" },
     { "id": "citrus-refreshing", "name": "Frescos o Cítricos" },

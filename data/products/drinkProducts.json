@@ -1,4 +1,13 @@
 {
+    "pitcher": [
+        {
+            "id": "jarra-fernet",
+            "name": "Jarra de Fernet",
+            "image": "jarra-fernet.jpg",
+            "description": "Jarra de Fernet con Coca-Cola.",
+            "price": 13000
+        }
+    ],
     "classic": [
         {
             "id": "aperol-spritz",
@@ -48,13 +57,6 @@
             "image": "tequila-sunrise.jpg",
             "description": "Tequila, Jugo de Naranja y Granadina.",
             "price": 13000
-        },
-        {
-            "id": "jarra-fernet",
-            "name": "Jarra de Fernet",
-            "image": "jarra-fernet.jpg",
-            "description": "Jarra de Fernet con Coca-Cola.",
-            "price": 13000
         }
     ],
     "fruity-sweet": [
@@ -66,17 +68,10 @@
             "price": 20000
         },
         {
-            "id": "pina-colada",
-            "name": "Piña Colada",
-            "image": "pina-colada.jpg",
-            "description": "Ron de coco, Licor de Piña Colada, Azúcar y Pulpa de Ananá.",
-            "price": 20000
-        },
-        {
-            "id": "sex-on-the-beach",
-            "name": "Sex on the Beach",
-            "image": "sex-on-the-beach.jpg",
-            "description": "Vodka, Licor de Durazno, Jugo de Naranja y Granadina.",
+            "id": "esperma-de-pitufo",
+            "name": "Esperma de Pitufo",
+            "image": "esperma-de-pitufo.jpg",
+            "description": "Vodka, Piña Colada, Blue Curacao y Pulpa de Ananá.",
             "price": 20000
         },
         {
@@ -87,20 +82,6 @@
             "price": 20000
         },
         {
-            "id": "pink-summer",
-            "name": "Pink Summer",
-            "image": "pink-summer.jpg",
-            "description": "Cosecha Tardía, Pulpa de Ananá y Jugo de Pomelo.",
-            "price": 20000
-        },
-        {
-            "id": "tropical-tardia",
-            "name": "Tropical Tardia",
-            "image": "tropical-tardia.jpg",
-            "description": "Cosecha Tardía, Pulpa de Maracuyá y Zumo de Limón.",
-            "price": 20000
-        },
-        {
             "id": "orgasmo",
             "name": "Orgasmo",
             "image": "orgasmo.jpg",
@@ -108,17 +89,31 @@
             "price": 20000
         },
         {
-            "id": "esperma-de-pitufo",
-            "name": "Esperma de Pitufo",
-            "image": "esperma-de-pitufo.jpg",
-            "description": "Vodka, Piña Colada, Blue Curacao y Pulpa de Ananá.",
-            "price": 20000
-        },
-        {
             "id": "pantera-rosa",
             "name": "Pantera Rosa",
             "image": "pantera-rosa.jpg",
             "description": "Vodka, Piña Colada, Granadina y Pulpa de Ananá.",
+            "price": 20000
+        },
+        {
+            "id": "pink-summer",
+            "name": "Pink Summer",
+            "image": "pink-summer.jpg",
+            "description": "Cosecha Tardía, Pulpa de Ananá y Jugo de Pomelo.",
+            "price": 20000
+        },
+        {
+            "id": "sex-on-the-beach",
+            "name": "Sex on the Beach",
+            "image": "sex-on-the-beach.jpg",
+            "description": "Vodka, Licor de Durazno, Jugo de Naranja y Granadina.",
+            "price": 20000
+        },
+        {
+            "id": "tropical-tardia",
+            "name": "Tropical Tardia",
+            "image": "tropical-tardia.jpg",
+            "description": "Cosecha Tardía, Pulpa de Maracuyá y Zumo de Limón.",
             "price": 20000
         }
     ],
@@ -128,13 +123,6 @@
             "name": "Blue Lagoon",
             "image": "blue-lagoon.jpg",
             "description": "Vodka, Blue Curaçao, Jugo de Limón y Sprite.",
-            "price": 20000
-        },
-        {
-            "id": "mojito",
-            "name": "Mojito",
-            "image": "mojito.jpg",
-            "description": "Ron, Hojas de Menta, Azúcar, Jugo de Limón y Sprite.",
             "price": 20000
         },
         {
@@ -170,6 +158,13 @@
             "name": "Margarita",
             "image": "margarita.jpg",
             "description": "Tequila, Triple Sec, Azúcar Jugo de Limón, Jugo de Naranja.",
+            "price": 20000
+        },
+        {
+            "id": "mojito",
+            "name": "Mojito",
+            "image": "mojito.jpg",
+            "description": "Ron, Hojas de Menta, Azúcar, Jugo de Limón y Sprite.",
             "price": 20000
         }
     ],
@@ -234,6 +229,13 @@
             "price": 10000
         },
         {
+            "id": "chupito-cielito-lindo",
+            "name": "Chupito Cielito Lindo",
+            "image": "chupito-cielito-lindo.jpg",
+            "description": "Piña Colada, Blue Curacao y Vodka.",
+            "price": 10000
+        },
+        {
             "id": "chupito-cubanito",
             "name": "Chupito Cubanito",
             "image": "chupito-cubanito.jpg",
@@ -262,10 +264,10 @@
             "price": 10000
         },
         {
-            "id": "chupito-de-kiev",
-            "name": "Chupito de Kiev",
-            "image": "chupito-de-kiev.jpg",
-            "description": "Pulpa Ananá, Blue Curacao, Zumo de Limón y Vodka.",
+            "id": "chupito-italiano",
+            "name": "Chupito Italiano",
+            "image": "chupito-italiano.jpg",
+            "description": "Granadina, Piña Colada, Licor de Menta y Vodka.",
             "price": 10000
         },
         {
@@ -273,13 +275,6 @@
             "name": "Chupito Kriptonita",
             "image": "chupito-kriptonita.jpg",
             "description": "Pulpa de Ananá, Piña Colada, Licor de Menta y Vodka.",
-            "price": 10000
-        },
-        {
-            "id": "chupito-tricolor",
-            "name": "Chupito Tricolor",
-            "image": "chupito-tricolor.jpg",
-            "description": "Granadina, Jugo de Naranja, Blue Curacao y Vodka.",
             "price": 10000
         }
     ],
