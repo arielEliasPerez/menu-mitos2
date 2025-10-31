@@ -33,14 +33,14 @@
         "name": "Jugo Baggio de Naranja",
         "image": "juice.jpg",
         "description": "Jugo de naranja de 1 Litro.",
-        "price": 7000
+        "price": 8000
     },
     {
         "id": "sprite-bottle-large",
         "name": "Sprite semi-grande",
         "image": "sprite-bottle-large.jpg",
         "description": "Botella de 1.75 Litros.",
-        "price": 8000
+        "price": 9000
     },
     {
         "id": "coca-cola-bottle-large",
