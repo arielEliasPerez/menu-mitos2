@@ -11,6 +11,10 @@ body.theme-halloween .site-header {
   background-color: black;
 }
 
+body.theme-halloween {
+  fami
+}
+
 /*Título Mitos Bar*/
 body.theme-halloween .site-header h1 {
   font-family: "Jolly Lodger", cursive, sans-serif;
@@ -42,13 +46,15 @@ body.theme-halloween #search::placeholder {
 }
 
 
-/*Nav Section activa*/
+/*Nav Section */
 .sections-nav a {
+  font-family: "Amatic SC", cursive, sans-serif;
+  font-weight: 700;
   background-color: rgba(165, 6, 6, 0.171);
 }
 
 .sections-nav a.active {
-  background-color: rgba(255, 0, 0, 0.171);
+  background-color: rgba(255, 123, 0, 0.171);
   box-shadow: var(--glow);
 }
 
@@ -94,6 +100,11 @@ body.theme-halloween .section-block {
 }
 
 
+.product-card.horizontal {
+  background: rgba(48, 2, 59, 0.507);
+  
+}
+
 
 /* Títulos de sección y categoría con efecto “espeluznante” */
 body.theme-halloween .section-header h2 {
@@ -130,12 +141,13 @@ body.theme-halloween .product-card.exclusive {
 
 @keyframes halloweenExclusivePulse {
   from { 
-    border: 2px solid rgb(146, 89, 3);
-    box-shadow: 0 0 12px rgb(241, 111, 4), 0 0 24px rgba(119, 1, 1, 0.4); 
+    border: 1px solid rgba(121, 75, 7, 0.61);
+    box-shadow: 0 0 12px rgba(121, 79, 2, 0.801), 0 0 24px rgb(131, 60, 2); 
+    
   }
   to   { 
-    border: 2px solid transparent;
-    box-shadow: 0 0 24px rgb(121, 2, 2), 0 0 48px rgb(131, 60, 2); 
+    border: 2px solid rgb(192, 119, 9);
+    box-shadow: 0 0 24px rgb(241, 111, 4), 0 0 48px rgba(119, 1, 1, 0.4); 
   }
 }
 
