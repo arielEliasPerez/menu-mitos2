@@ -53,7 +53,7 @@
   "halloween": {
     "id": "halloween",
     "name": "Halloween",
-    "dateRange": ["10-25", "11-1"],
+    "dateRange": ["10-25", "11-2"],
     "class": "theme-halloween",
     "colors": {
       "primary": "#ff7518",
