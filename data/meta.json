@@ -7,8 +7,8 @@
   },
   "logo": "assets/logo-mitosbar.PNG",
   "social": [
-    { "name": "Instagram", "url": "https://instagram.com/mitosbar", "icon": "assets/instagram.svg" },
-    { "name": "Facebook", "url": "https://facebook.com/mitosbar", "icon": "assets/facebook.svg" },
-    { "name": "WhatsApp", "url": "https://wa.me/54911XXXXXXXX", "icon": "assets/whatsapp.svg" }
+    { "name": "Instagram", "url": "https://instagram.com/mitos.cerveceria", "icon": "assets/instagram.svg" },
+    { "name": "Facebook", "url": "https://tiktok.com/mitos.cerveceria", "icon": "assets/facebook.svg" },
+    { "name": "WhatsApp", "url": "https://api.whatsapp.com/send/?phone=541135887741&text=X+reserva&type=phone_number&app_absent=0", "icon": "assets/whatsapp.svg" }
   ]
 }
