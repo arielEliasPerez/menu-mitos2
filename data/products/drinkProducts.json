@@ -173,21 +173,21 @@
             "id": "boulevardier",
             "name": "Boulevardier",
             "image": "boulevardier.jpg",
-            "description": "Whiskey, Campari y Vermouth Rosso.",
+            "description": "Whisky, Campari y Vermouth Rosso.",
             "price": 15000
         },
         {
             "id": "negroni",
             "name": "Negroni",
             "image": "negroni.jpg",
-            "description": "Ginebra, Campari y Vermouth Rosso.",
+            "description": "Gin, Campari y Vermouth Rosso.",
             "price": 15000
         },
         {
             "id": "medida-black",
             "name": "Medida de Black Label",
             "image": "medida-black.jpg",
-            "description": "2 oz de Whiskey Black Label con hielo.",
+            "description": "2 oz de Whisky Black Label con hielo.",
             "price": 15000
         },
         {

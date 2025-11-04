@@ -1,29 +1,102 @@
 :root {
-  --bg: #0b0f1a;
+ 
   --panel: #111625;
   --text: #e8ecf1;
   --muted: #9aa4b2;
-  --primary: #ff3b3b;   /* rojo neón */
-  --secondary: #3ba7ff; /* azul neón */
-  --glow: 0 0 12px rgba(255, 59, 59, 0.6), 0 0 24px rgba(59, 167, 255, 0.35);
+  --primary: #d42323;   /* rojo neón */
+  --secondary: #3696e4; /* azul neón */
+  --glow: 0 0 10px rgba(219, 7, 7, 0.897), 0 0 8px rgba(255, 0, 0, 0.534);
 }
 
-/* Decoraciones neón */
-.section-header h2 {
-  color: var(--primary);
-  text-shadow: 0 0 8px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
+
+
+
+
+/*Fondo header*/
+body.theme-default .site-header {
+  background-color: var(--panel);
+  border-bottom: 0px;
 }
-.category-title {
-  color: var(--secondary);
-  text-shadow: 0 0 6px rgba(59,167,255,0.8), 0 0 12px rgba(255,59,59,0.4);
+
+
+/*Título Mitos Bar*/
+body.theme-default .site-header h1 {
+  font-family: "Michroma", sans-serif;
+  font-size: 24px;
+  text-shadow: 0 0 6px rgba(255, 24, 24, 0.8), 0 0 12px rgba(1, 141, 196, 0.6);
 }
+
+/* Topbar default */
+body.theme-default .topbar {
+  background: linear-gradient(-180deg, var(--panel), rgb(43, 1, 1));
+  border: 0px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/*Nav Section */
+.sections-nav a {
+  font-family: "Economica", sans-serif;
+  font-weight: 700;
+  background-color: rgba(165, 6, 6, 0.171);
+}
+.sections-nav a.active {
+  background-color: rgba(216, 23, 23, 0.26);
+  box-shadow: var(--glow);
+}
+
 
 /* Topbar animada */
 .topbar { animation: neonPulse 4s infinite alternate; }
 @keyframes neonPulse {
-  from { box-shadow: 0 0 6px rgba(129, 4, 4, 0.4), 0 0 12px rgba(228, 5, 5, 0.3); }
-  to   { box-shadow: 0 0 12px rgba(255,59,59,0.7), 0 0 24px rgba(212, 8, 8, 0.5); }
+  from { box-shadow: 0 0 6px rgba(129, 4, 4, 0.719), 0 0 12px rgba(228, 5, 5, 0.3); }
+  to   { box-shadow: 0 0 12px rgba(235, 14, 14, 0.863), 0 0 24px rgba(212, 8, 8, 0.5); }
 }
+
+
+/* Títulos y subtítulos neón */
+.section-header h2 {
+  font-family: "Tourney", sans-serif;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: var(--primary);
+  text-shadow: 0 0 8px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
+}
+.category-title {
+  font-family: "Tourney", sans-serif;
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: var(--secondary);
+  text-shadow: 0 0 6px rgba(59,167,255,0.8), 0 0 12px rgba(255,59,59,0.4);
+}
+
+
+/* Secciones con borde neón rojo */
+body.theme-default .section-block {
+  border: 2px solid transparent;
+  
+  animation: halloweenPulse 1s infinite alternate;
+  background: rgba(0, 0, 0, 0.795);
+}
+
+@keyframes halloweenPulse {
+  from {
+    box-shadow: 0 0 20px rgba(15, 1, 1, 0.315), 0 0 20px rgba(0, 0, 0, 0.7);
+  }
+  to {
+    border: 2px solid var(--secondary);
+    box-shadow: 0 0 15px #3ba7ff, 0 0 25px rgba(3, 87, 155, 0.4);
+    
+  }
+}
+
 
 /* Hover social */
 .social-btn:hover {
@@ -62,4 +135,21 @@
 .section-block:hover {
   box-shadow: 0 0 16px rgba(59,167,255,0.8), 0 0 32px rgba(59,167,255,0.6);
   transform: translateY(-2px);
+}
+
+
+/* Fondo general */
+body.theme-halloween {
+  background: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+  color: #000000;
+}
+
+.bg-fixed {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("../../assets/themes/default-bg.png") no-repeat center top / cover;
+  z-index: -1;
 }
