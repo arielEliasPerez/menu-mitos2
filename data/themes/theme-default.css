@@ -22,7 +22,7 @@ body.theme-default .site-header {
 /*Título Mitos Bar*/
 body.theme-default .site-header h1 {
   font-family: "Michroma", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-shadow: 0 0 6px rgba(255, 24, 24, 0.8), 0 0 12px rgba(1, 141, 196, 0.6);
 }
 
@@ -37,33 +37,33 @@ body.theme-default .topbar {
 .sections-nav a {
   font-family: "Economica", sans-serif;
   font-weight: 700;
-  background-color: rgba(165, 6, 6, 0.171);
+  background-color: rgba(62, 6, 165, 0.171);
 }
 .sections-nav a.active {
-  background-color: rgba(216, 23, 23, 0.26);
+  background-color: rgba(73, 9, 5, 0.048);
   box-shadow: var(--glow);
 }
 
 
 /* Topbar animada */
-.topbar { animation: neonPulse 4s infinite alternate; }
+.topbar { animation: neonPulse 2s infinite alternate; }
 @keyframes neonPulse {
-  from { box-shadow: 0 0 6px rgba(129, 4, 4, 0.719), 0 0 12px rgba(228, 5, 5, 0.3); }
-  to   { box-shadow: 0 0 12px rgba(235, 14, 14, 0.863), 0 0 24px rgba(212, 8, 8, 0.5); }
+  from { box-shadow: 0 0 6px rgba(129, 4, 4, 0.719), 0 0 18px rgba(228, 5, 5, 0.3); }
+  to   { box-shadow: 0 0 24px rgba(235, 14, 14, 0.863), 0 0 24px rgba(212, 8, 8, 0.5); }
 }
 
 
 /* Títulos y subtítulos neón */
-.section-header h2 {
+body.theme-default .section-header h2 {
   font-family: "Tourney", sans-serif;
   font-family: "Tourney", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+ 
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
   color: var(--primary);
-  text-shadow: 0 0 8px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
+  text-shadow: 0 0 18px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
+   font-weight: <weight>;
 }
 .category-title {
   font-family: "Tourney", sans-serif;
