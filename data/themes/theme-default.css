@@ -1,10 +1,10 @@
 :root {
- 
+ --bg: rgba(0, 0, 0, 0);
   --panel: #111625;
   --text: #e8ecf1;
   --muted: #9aa4b2;
-  --primary: #c96565;   /* rojo neón */
-  --secondary: #96c8f1; /* azul neón */
+  --primary: #f36c9b;   /* rojo neón */
+  --secondary: #b8f8fa; /* azul neón */
   --glow: 0 0 10px rgba(219, 7, 7, 0.897), 0 0 8px rgba(255, 0, 0, 0.534);
 }
 
@@ -14,29 +14,59 @@
 
 /*Fondo header*/
 body.theme-default .site-header {
-  background-color: var(--panel);
+  background-color: rgb(17, 0, 0);
   border-bottom: 0px;
 }
 
 
 /*Título Mitos Bar*/
 body.theme-default .site-header h1 {
-  font-family: "Michroma", sans-serif;
-  font-size: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
   text-shadow: 0 0 6px rgba(255, 24, 24, 0.8), 0 0 12px rgba(1, 141, 196, 0.6);
 }
 
 /* Topbar default */
 body.theme-default .topbar {
-  background: linear-gradient(-180deg, var(--panel), rgb(43, 1, 1));
+  background: linear-gradient(0deg, rgb(65, 5, 5), rgb(17, 0, 0));
   border: 0px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  
+  animation: neonPulse 3s infinite alternate;
 }
+@keyframes neonPulse {
+  from { 
+    border-bottom: 2px solid rgba(141, 38, 38, 0.925);
+    box-shadow: 
+        0 0 20px rgb(119, 4, 4),
+        0 0 40px rgba(34, 3, 3, 0.8);
+   }
+  to   { 
+    
+    border-bottom: 2px solid rgba(240, 57, 57, 0.925);
+    box-shadow: 
+        0 0 12px red,
+        0 0 24px rgba(235, 14, 14, 0.5) ;
+  }
+}
+body.theme-default #search {
+  background: #85081d25; /* rojo vino oscuro */
+  color: var(--text);
+  box-shadow: 0 0 8px rgba(168, 8, 51, 0.39);
+}
+
+body.theme-default #search::placeholder {
+  color: rgb(131, 126, 126);
+}
+
 
 /*Nav Section */
 .sections-nav a {
-  font-family: "Economica", sans-serif;
-  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   background-color: rgba(62, 6, 165, 0.171);
 }
 .sections-nav a.active {
@@ -45,39 +75,37 @@ body.theme-default .topbar {
 }
 
 
-/* Topbar animada */
-.topbar { animation: neonPulse 2s infinite alternate; }
-@keyframes neonPulse {
-  from { box-shadow: 0 0 6px rgba(129, 4, 4, 0.719), 0 0 18px rgba(228, 5, 5, 0.3); }
-  to   { box-shadow: 0 0 24px rgba(235, 14, 14, 0.863), 0 0 24px rgba(212, 8, 8, 0.5); }
-}
 
 
 /* Títulos y subtítulos neón */
+.section-header { padding-top: 0px; margin-top: 0px; }
+.section-block {
+  padding-top: 0px;
+}
 .section-header h2 {
   font-family: "Neonderthaw", cursive;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 400;
   font-style: normal;
   color: var(--primary);
-  text-shadow:
-    0 0 5px rgb(182, 7, 7),
-    0 0 10px rgb(211, 16, 16),
-    0 0 20px rgb(216, 14, 14);
-
-
+  text-shadow: 
+    0 0 3px rgba(247, 174, 174, 0.952),
+    0 0 5px rgba(255, 59, 59, 0.8),
+    0 0 10px rgba(255, 59, 59, 0.6),
+    0 0 20px rgba(255, 59, 59, 0.6);
 }
 .category-title {
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   color: var(--secondary);
   text-shadow:
-    0 0 5px rgb(10, 131, 179),
-    0 0 10px rgb(9, 212, 219),
-    0 0 20px rgb(10, 215, 230);
+    0 0 2px rgb(37, 211, 241),
+    0 0 5px rgba(43, 217, 240, 0.89),
+    0 0 10px rgb(7, 219, 202),
+    0 0 20px rgb(7, 219, 202);
 }
 
 
@@ -143,7 +171,7 @@ body.theme-default .section-block {
 
 /* Fondo general */
 body.theme-halloween {
-  background: transparent;
+  background-color: black;
   background-size: cover;
   background-attachment: fixed;
   z-index: -2;
@@ -151,6 +179,7 @@ body.theme-halloween {
 }
 
 .bg-fixed {
+  background-color: #000000;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url("../../assets/themes/default-bg.png") no-repeat center top / cover;
