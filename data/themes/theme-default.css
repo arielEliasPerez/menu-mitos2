@@ -32,7 +32,7 @@ body.theme-default .site-header h1 {
 body.theme-default .topbar {
   background: linear-gradient(0deg, rgb(65, 5, 5), rgb(17, 0, 0));
   border: 0px;
-  
+  border-bottom: 0px solid rgba(235, 25, 25, 0.61);
   animation: neonPulse 3s infinite alternate;
 }
 @keyframes neonPulse {
