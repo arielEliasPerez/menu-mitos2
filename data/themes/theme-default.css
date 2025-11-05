@@ -84,7 +84,7 @@ body.theme-default #search::placeholder {
 }
 .section-header h2 {
   font-family: "Neonderthaw", cursive;
-  font-size: 18px;
+  font-size: 38px;
   font-weight: 400;
   font-style: normal;
   color: var(--primary);
