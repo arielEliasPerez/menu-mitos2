@@ -113,7 +113,7 @@ html {
 .section-header {
   display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px;
 }
-.section-header .count { color: var(--muted); font-size: 13px; }
+.section-header .count {  font-size: 13px; }
 
 .category-block { margin-top: 12px; }
 

@@ -3,8 +3,8 @@
   --panel: #111625;
   --text: #e8ecf1;
   --muted: #9aa4b2;
-  --primary: #d42323;   /* rojo neón */
-  --secondary: #3696e4; /* azul neón */
+  --primary: #c96565;   /* rojo neón */
+  --secondary: #96c8f1; /* azul neón */
   --glow: 0 0 10px rgba(219, 7, 7, 0.897), 0 0 8px rgba(255, 0, 0, 0.534);
 }
 
@@ -54,27 +54,30 @@ body.theme-default .topbar {
 
 
 /* Títulos y subtítulos neón */
-body.theme-default .section-header h2 {
-  font-family: "Tourney", sans-serif;
-  font-family: "Tourney", sans-serif;
-  font-optical-sizing: auto;
- 
+.section-header h2 {
+  font-family: "Neonderthaw", cursive;
+  font-size: 40px;
+  font-weight: 600;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
   color: var(--primary);
-  text-shadow: 0 0 18px rgba(160, 23, 23, 0.8), 0 0 16px rgba(59,167,255,0.6);
-   font-weight: <weight>;
+  text-shadow:
+    0 0 5px rgb(182, 7, 7),
+    0 0 10px rgb(211, 16, 16),
+    0 0 20px rgb(216, 14, 14);
+
+
 }
 .category-title {
-  font-family: "Tourney", sans-serif;
-  font-family: "Tourney", sans-serif;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
   color: var(--secondary);
-  text-shadow: 0 0 6px rgba(59,167,255,0.8), 0 0 12px rgba(255,59,59,0.4);
+  text-shadow:
+    0 0 5px rgb(10, 131, 179),
+    0 0 10px rgb(9, 212, 219),
+    0 0 20px rgb(10, 215, 230);
 }
 
 
