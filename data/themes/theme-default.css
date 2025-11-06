@@ -1,5 +1,4 @@
 :root {
- --bg: rgba(0, 0, 0, 0);
   --panel: #111625;
   --text: #e8ecf1;
   --muted: #9aa4b2;
@@ -51,13 +50,14 @@ body.theme-default .topbar {
   }
 }
 body.theme-default #search {
-  background: #85081d25; /* rojo vino oscuro */
+  background: #3d040d80; /* rojo vino oscuro */
   color: var(--text);
-  box-shadow: 0 0 8px rgba(168, 8, 51, 0.39);
+  border: 0px solid rgba(241, 84, 84, 0.644);
+  box-shadow: 0 0 8px rgba(168, 8, 51, 0.479);
 }
 
 body.theme-default #search::placeholder {
-  color: rgb(131, 126, 126);
+  color: rgba(241, 84, 84, 0.438);
 }
 
 
@@ -67,7 +67,7 @@ body.theme-default #search::placeholder {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  background-color: rgba(62, 6, 165, 0.171);
+  background-color: rgba(134, 5, 5, 0.171);
 }
 .sections-nav a.active {
   background-color: rgba(73, 9, 5, 0.048);
@@ -90,7 +90,7 @@ body.theme-default #search::placeholder {
   color: var(--primary);
   text-shadow: 
     0 0 3px rgba(247, 174, 174, 0.952),
-    0 0 5px rgba(255, 59, 59, 0.8),
+    0 0 5px rgba(255, 59, 59, 0.856),
     0 0 10px rgba(255, 59, 59, 0.6),
     0 0 20px rgba(255, 59, 59, 0.6);
 }
@@ -109,7 +109,7 @@ body.theme-default #search::placeholder {
 }
 
 
-/* Secciones con borde neón rojo */
+/* Secciones con borde neón celeste */
 body.theme-default .section-block {
   border: 2px solid transparent;
   
@@ -135,6 +135,7 @@ body.theme-default .section-block {
   box-shadow: 0 0 10px rgba(255,59,59,0.7), 0 0 20px rgba(59,167,255,0.6);
 }
 
+
 /* Cards exclusivos (estilo por defecto) */
 .product-card.exclusive {
   border: 2px solid transparent;
@@ -144,8 +145,14 @@ body.theme-default .section-block {
   animation: neonExclusivePulse 0.3s infinite alternate;
 }
 @keyframes neonExclusivePulse {
-  from { box-shadow: 0 0 10px rgba(140, 5, 194, 0.4), 0 0 20px rgba(183, 59, 255, 0.2); }
-  to   { box-shadow: 0 0 20px rgba(165, 35, 182, 0.8), 0 0 40px rgba(232, 59, 255, 0.5); }
+  from { 
+    border: 2px solid rgba(106, 31, 121, 0.767);
+    box-shadow: 0 0 10px rgba(140, 5, 194, 0.4), 0 0 20px rgba(183, 59, 255, 0.2); 
+  }
+  to   { 
+    border: 2px solid rgba(216, 64, 247, 0.8);
+    box-shadow: 0 0 20px rgba(165, 35, 182, 0.8), 0 0 40px rgba(232, 59, 255, 0.5); 
+  }
 }
 .product-card.exclusive::after {
   content: "★ Exclusivo";
@@ -155,18 +162,8 @@ body.theme-default .section-block {
   text-shadow: 0 0 6px rgba(59,167,255,0.8);
 }
 
-/* Bordes de sección con neón azul (versión suave por defecto) */
-.section-block {
-  border: 2px solid transparent;
-  background: linear-gradient(var(--panel), var(--panel)) padding-box,
-              linear-gradient(135deg, var(--secondary), rgba(59,167,255,0.25)) border-box;
-  box-shadow: 0 0 12px rgba(59,167,255,0.5), 0 0 24px rgba(59,167,255,0.3);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-.section-block:hover {
-  box-shadow: 0 0 16px rgba(59,167,255,0.8), 0 0 32px rgba(59,167,255,0.6);
-  transform: translateY(-2px);
-}
+
+
 
 
 /* Fondo general */
@@ -179,9 +176,10 @@ body.theme-halloween {
 }
 
 .bg-fixed {
-  background-color: #000000;
+  
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url("../../assets/themes/default-bg.png") no-repeat center top / cover;
   z-index: -1;
+  background-color: #000000;
 }

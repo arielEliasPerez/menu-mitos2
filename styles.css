@@ -3,7 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background: rgba(0, 0, 0, 0.295);
   color: var(--text);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
 }
